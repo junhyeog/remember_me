@@ -2,6 +2,7 @@ import express, { Request } from 'express';
 import helmet, { contentSecurityPolicy } from 'helmet';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 import winston from 'winston';
 import router from 'routes';
 import { handleError } from 'error';
@@ -42,6 +43,9 @@ export default async function createApp(isDev = false) {
   const app = express();
   app.use(helmet());
   // app.use(morgan('dev'));
+
+  // Set cors
+  app.use(cors());
 
   // Parsers
   app.use(express.json());
