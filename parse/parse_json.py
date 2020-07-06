@@ -23,9 +23,6 @@ def naive_dic():
     d={}
     d.setdefault('name_kor', '')
     d.setdefault('name_chi', '')
-    d.setdefault('rank', '')
-    d.setdefault('detail', '')
-    d.setdefault('source', '')
     d.setdefault('birth_year', -1)
     d.setdefault('birth_month', -1)
     d.setdefault('birth_day', -1)
@@ -34,6 +31,9 @@ def naive_dic():
     d.setdefault('die_day', -1)
     d.setdefault('place', '')
     d.setdefault('kind', '')
+    d.setdefault('rank', '')
+    d.setdefault('detail', '')
+    d.setdefault('source', '')
     return d
     
 
@@ -70,10 +70,15 @@ def parse_r(r):
 for r in v:
     patrtc_list.append(parse_r(r))
     
-client = mongo.MongoClient()
-
+client = mongo.MongoClient('mongodb://127.0.0.1:27017/dev')
+print(client.address)
+print(client.HOST)
+#print(client.)
+print(client.database_names())
 db=client.rmbrme
 patrtc=db.patrtc
+print(db.collection_names())
+#print(patrtc.)
 
 #result=patrtc.insert_many(patrtc_list)  
 #print(result)
@@ -81,3 +86,4 @@ patrtc=db.patrtc
 for p in patrtc_list:
     if patrtc.find(p).count()==0:
         patrtc.insert_one(p)
+print(patrtc.find().count())

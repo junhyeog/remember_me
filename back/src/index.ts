@@ -1,10 +1,12 @@
 import express, { Request } from 'express';
-import helmet from 'helmet';
+import helmet, { contentSecurityPolicy } from 'helmet';
 import mongoose from 'mongoose';
 import cookieParser from 'cookie-parser';
 import winston from 'winston';
 import router from 'routes';
 import { handleError } from 'error';
+import PatrtcModel from 'models/patrtc';
+
 
 async function setup(isDev: boolean) {
   if (isDev) {
@@ -14,17 +16,19 @@ async function setup(isDev: boolean) {
     winston.error('MONGO_HOST not found');
     process.exit(1);
   }
-  if (process.env.SESSION_SECRET === undefined) {
-    winston.error('SESSION_SECRET not found');
-    process.exit(1);
-  }
+  // if (process.env.SESSION_SECRET === undefined) {
+  //   winston.error('SESSION_SECRET not found');
+  //   process.exit(1);
+  // }
   const mongooseConfig: mongoose.ConnectionOptions = {
     useCreateIndex: true,
     useFindAndModify: false,
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   };
-  await mongoose.connect(process.env.MONGO_HOST, mongooseConfig);
+  await mongoose.connect(process.env.MONGO_HOST, (err) => {
+    console.log('connection err', err);
+  });
   winston.info('Connected to mongodb');
 }
 
