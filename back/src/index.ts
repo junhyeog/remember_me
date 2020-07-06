@@ -27,7 +27,10 @@ async function setup(isDev: boolean) {
     useUnifiedTopology: true,
   };
   await mongoose.connect(process.env.MONGO_HOST, (err) => {
-    console.log('connection err', err);
+    if (err) {
+      console.log('connection err', err);
+      process.exit(1);
+    }
   });
   winston.info('Connected to mongodb');
 }
