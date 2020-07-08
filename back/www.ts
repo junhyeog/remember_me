@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import './src/logger';
+import './src/utils/logger';
 import createApp from './src';
 import http from 'http';
 

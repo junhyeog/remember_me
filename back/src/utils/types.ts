@@ -28,3 +28,9 @@ export type PName = {
   name_kor: String;
   name_chi: String;
 }
+
+export type Date = {
+  year: Number;
+  month?: Number;
+  day?: Number;
+}

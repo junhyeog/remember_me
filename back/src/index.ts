@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import winston from 'winston';
 import router from 'routes';
-import { handleError } from 'error';
+import handleError from 'middlewares/handelError';
 import PatrtcModel from 'models/patrtc';
 
 
@@ -27,9 +27,9 @@ async function setup(isDev: boolean) {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   };
-  await mongoose.connect(process.env.MONGO_HOST, (err) => {
+  await mongoose.connect(process.env.MONGO_HOST, mongooseConfig, (err) => {
     if (err) {
-      console.log('connection err', err);
+      winston.error('connection err', err);
       process.exit(1);
     }
   });

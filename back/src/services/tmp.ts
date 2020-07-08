@@ -1,4 +1,4 @@
-import { ServiceResult } from 'types';
+import { ServiceResult } from 'utils/types';
 
 /**
  * @description get author

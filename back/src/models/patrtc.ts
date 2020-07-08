@@ -1,4 +1,4 @@
-import { Patrtc } from 'types';
+import { Patrtc } from 'utils/types';
 import mongo, { Schema } from 'mongoose';
 
 const schema = new mongo.Schema<Patrtc>(
