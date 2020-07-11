@@ -4,6 +4,7 @@ import mongo, { Schema } from 'mongoose';
 const schema = new mongo.Schema<Patrtc>(
   {
     _id: { required: true, type: Schema.Types.ObjectId },
+    group: { required: true, type: 'korwar' },
     name_kor: { required: true, type: String },
     name_chi: { type: String },
     birth_year: { type: Number },
