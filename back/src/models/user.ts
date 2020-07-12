@@ -1,11 +1,10 @@
-import { Patrtc } from 'utils/types';
+import { User } from 'utils/types';
 import mongo, { Schema } from 'mongoose';
 
-const schema = new mongo.Schema<Patrtc>(
+const schema = new mongo.Schema<User>(
   {
     _id: { required: true, type: Schema.Types.ObjectId },
-    group: { enum: ['korwar'], type: String },
-    name_kor: { required: true, type: String },
+    name: { required: true, type: String },
     name_chi: { type: String },
     birth_year: { type: Number },
     birth_month: { type: Number },
@@ -22,8 +21,8 @@ const schema = new mongo.Schema<Patrtc>(
     source: { type: String }
   },
   {
-    collection: 'patrtc', // 컬렉션명 지정
+    collection: 'user', // 컬렉션명 지정
   }
 );
-const PatrtcModel = mongo.model<Patrtc & mongo.Document>('Patrtc', schema);
-export default PatrtcModel;
+const UserModel = mongo.model<User & mongo.Document>('User', schema);
+export default UserModel;

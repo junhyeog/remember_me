@@ -4,12 +4,13 @@ import PatrtcRouter from './patrtc';
 
 const router = express.Router();
 
-// router.get('/', (_, res) => {
-//   res.status(200);
-//   res.send('Hello world!!');
-// });
 
 router.use('/tmp', TmpRouter);
 router.use('/patrtc', PatrtcRouter);
+
+router.get('/', (_, res) => {
+  res.status(200);
+  res.send('Hello world!!');
+});
 
 export default router;

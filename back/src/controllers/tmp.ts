@@ -26,8 +26,12 @@ export async function author(req: Request, res: Response, next: NextFunction) {
 export async function repeat(req: Request, res: Response, next: NextFunction) {
   try {
     const ret = await TmpService.repeat(req.body.action.params);
-    console.log(req.body);
-    console.log(req.host);
+    // console.log(req.host);
+    // console.log(res);
+    // console.log(req.host);
+    // console.log(JSON.stringify(req.body));
+    // console.log(req.host);
+    // console.log(JSON.stringify(req.body.useRequest.user));
     if (ret.success) {
       console.log('===========');
       console.log(ret.result);

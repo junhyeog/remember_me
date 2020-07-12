@@ -1,4 +1,4 @@
-import { ObjectId } from 'bson';
+import mongo, { Schema } from 'mongoose';
 
 export type ServiceResult<T = undefined, R = undefined> = Promise<{
   success: boolean;
@@ -6,8 +6,9 @@ export type ServiceResult<T = undefined, R = undefined> = Promise<{
   result?: R;
 }>;
 
-export type Patrtc = {
-  _id: ObjectId;
+export interface Patrtc {
+  _id: Schema.Types.ObjectId;
+  group: 'korwar';
   name_kor: String;
   name_chi: String;
   birth_year: Number;
@@ -17,14 +18,29 @@ export type Patrtc = {
   die_month: Number;
   die_day: Number;
   place: String;
+  serial: String;
   kind: String;
+  unit: String;
   rank: String;
   detail: String;
   source: String;
 }
 
+export interface User {
+  _id: Schema.Types.ObjectId;
+  name: String;
+  birth_year: Number;
+  birth_month: Number;
+  birth_day: Number;
+  place: String;
+  kind: String;
+  unit: String;
+  rank: String;
+  favorite: Schema.Types.ObjectId[];
+}
+
 export type PName = {
-  _id: ObjectId;
+  _id: Schema.Types.ObjectId;
   name_kor: String;
   name_chi: String;
 }
