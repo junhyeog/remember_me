@@ -1,9 +1,8 @@
 import { Button } from './types';
-export default function simpleText(text: String, buttons?: Button[]) {
+export default function SimpleText(text: String) {
   return {
     simpleText: {
-      text,
-      buttons
+      text
     }
   };
 }

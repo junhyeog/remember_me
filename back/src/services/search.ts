@@ -2,7 +2,7 @@ import { ServiceResult, Patrtc, PName } from 'utils/types';
 import PatrtcModel from 'models/patrtc';
 import { RESULT_SIZE } from 'utils/constant';
 import { Date } from 'utils/types';
-import { ResBody, SimpleText } from 'templates';
+import { ResBody, BasicCard } from 'templates';
 
 
 /**
@@ -10,7 +10,7 @@ import { ResBody, SimpleText } from 'templates';
  */
 export async function main():
   ServiceResult<'SEARCH/MAIN', Object> {
-  const output1 = SimpleText('여러 옵션으로 검색할 수 있습니다.', [
+  const output1 = BasicCard('검색하기', '여러 옵션으로 검색할 수 있습니다.', [
     {
       label: '옵션 추가하기',
       action: 'block',
@@ -22,7 +22,8 @@ export async function main():
     name: 'search_options',
     lifeSpan: 10,
     params: {
-      name_kor: '김무비'
+      // name_kor: '김무비',
+      // birth_year: 2019
     }
   };
   return {

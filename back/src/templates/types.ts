@@ -5,6 +5,12 @@ export type Button = {
   blockId: String; // 호출할 블록의 id
 }
 
+export type BasicCard = {
+  title?: String; // 
+  description?: String; // 
+  buttons?: Button[];
+}
+
 export type ContextValue = {
   name: String;
   lifeSpan: Number;
