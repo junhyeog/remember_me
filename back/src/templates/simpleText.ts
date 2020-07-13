@@ -1,14 +1,9 @@
-export default function simpleText(text: String) {
+import { Button } from './types';
+export default function simpleText(text: String, buttons?: Button[]) {
   return {
-    version: '2.0',
-    template: {
-      outputs: [
-        {
-          simpleText: {
-            text: text
-          }
-        }
-      ]
+    simpleText: {
+      text,
+      buttons
     }
   };
 }

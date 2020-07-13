@@ -1,4 +1,5 @@
 import { ServiceResult } from 'utils/types';
+import { SimpleText } from 'templates';
 
 /**
  * @description get author
@@ -31,7 +32,7 @@ export async function repeat(params: any):
     }
   };
   return {
-    result: responseBody,
+    result: SimpleText(params.mes),
     success: true
   };
 }
