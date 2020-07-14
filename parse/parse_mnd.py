@@ -107,7 +107,7 @@ def parse_r(r):
 for r in v:
     patrtc_list.append(parse_r(r))
     
-client = mongo.MongoClient('mongodb://127.0.0.1:27017/dev')
+client = mongo.MongoClient('mongodb://localhost:27017/dev')
 print(client.address)
 print(client.HOST)
 print(client.database_names())
