@@ -53,7 +53,9 @@ export default async function createApp(isDev = false) {
   app.use(cookieParser());
 
   // Routes
-  app.use(router);
+  // app.use(router);
+  app.use('/', router);
+
 
   // Error handling
   app.use(handleError);

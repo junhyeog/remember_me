@@ -5,14 +5,35 @@ export type Button = {
   blockId: String; // 호출할 블록의 id
 }
 
+export type QuickReply = {
+  label: String; // 노출되는 문구
+  action: 'block' | 'message'; // 클릭시 수행될 작업
+  messageText: String; //클릭시 사용자의 발화로 노출될 문구
+  blockId: String; // 호출할 블록의 id
+  extra?: any;
+}
+
 export type BasicCard = {
   title?: String; // 
   description?: String; // 
   buttons?: Button[];
 }
 
-export type ContextValue = {
+type ContextParamProp = {
+  value: String;
+  resolvedValue: String;
+}
+
+interface ContextParam extends Object {
+  name_kor?: ContextParamProp;
+  birth_year?: ContextParamProp;
+  birth_month?: ContextParamProp;
+  birth_day?: ContextParamProp;
+}
+
+export type Context = {
   name: String;
-  lifeSpan: Number;
-  params: Object;
+  lifeSpan?: Number;
+  ttl?: Number;
+  params: ContextParam;
 }

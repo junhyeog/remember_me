@@ -39,6 +39,12 @@ export interface User {
   favorite: Schema.Types.ObjectId[];
 }
 
+// export type ContextParam = {
+//   value: String;
+//   resolvedValue: String;
+// }
+
+
 export type PName = {
   _id: Schema.Types.ObjectId;
   name_kor: String;

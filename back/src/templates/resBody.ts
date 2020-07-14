@@ -1,21 +1,20 @@
-import { ContextValue } from './types';
+import { Context, QuickReply } from './types';
 
-export default function ResBody(outputs: Object[], contextValue?: ContextValue[]) {
-  if (contextValue) {
-    return {
-      version: '2.0',
-      template: {
-        outputs
-      },
-      context: {
-        values: contextValue
-      }
-    };
-  }
+type ResBodyProps = {
+  outputs: Object[];
+  quickReplies?: QuickReply[];
+  contexts?: Context[];
+}
+
+export default function ResBody(props: ResBodyProps) {
   return {
     version: '2.0',
     template: {
-      outputs
+      outputs: props.outputs,
+      quickReplies: props.quickReplies
+    },
+    contexts: {
+      values: props.contexts
     }
   };
 }

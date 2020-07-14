@@ -32,7 +32,7 @@ export async function repeat(params: any):
     }
   };
   return {
-    result: SimpleText(params.mes),
+    result: responseBody,
     success: true
   };
 }
