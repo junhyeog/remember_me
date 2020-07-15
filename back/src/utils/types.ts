@@ -56,3 +56,11 @@ export type Date = {
   month?: Number;
   day?: Number;
 }
+
+export type SysNumber = {
+  amount: Number;
+  unit?: any;
+}
+
+export type NumOptionName = 'name_kor' | 'birth_year' | 'birth_month' | 'birth_day';
+

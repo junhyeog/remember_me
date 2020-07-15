@@ -1,0 +1,312 @@
+2020-07-13 20:47:58.286 [[32minfo[39m] 	Running in development mode 
+2020-07-13 20:47:58.464 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:12:27.921 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:12:27.981 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:12:39.116 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:12:39.172 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:12:50.584 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:12:59.347 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:13:29.580 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:15:45.335 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:15:45.394 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:15:49.358 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:16:06.296 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:16:06.356 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:16:37.105 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:16:37.161 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:16:40.609 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:17:22.456 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:17:22.521 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:17:45.270 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:17:45.330 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:18:44.383 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:18:44.441 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:21:04.438 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:21:04.504 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:21:49.563 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:21:49.635 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:22:09.033 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:22:09.092 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:22:12.499 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:22:40.916 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:22:40.975 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:22:48.274 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:22:58.747 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:23:29.625 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:23:29.682 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:27:01.972 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:27:02.169 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:28:19.173 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:28:19.357 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:28:56.552 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:28:56.610 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:29:47.184 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:29:47.241 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:31:32.573 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:31:32.635 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:32:37.111 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:32:37.171 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:32:51.076 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:32:51.134 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:32:57.952 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:32:58.014 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:33:40.999 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:33:41.057 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:34:03.478 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:34:03.538 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:34:15.460 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:34:15.517 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:34:56.177 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:34:56.232 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:35:21.177 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:35:21.404 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:36:09.613 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:36:09.874 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:38:15.276 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:38:15.340 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:42:10.824 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:42:10.882 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:42:16.376 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 21:42:33.736 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:42:33.797 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:49:03.276 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:49:03.334 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:49:24.048 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:49:24.106 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:50:05.772 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:50:05.828 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:52:48.403 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:52:48.459 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:52:52.309 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:52:52.367 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:53:03.152 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:53:03.236 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:58:24.007 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:58:24.064 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:58:40.595 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:58:40.661 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:58:57.728 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:58:57.785 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 21:59:56.781 [[32minfo[39m] 	Running in development mode 
+2020-07-13 21:59:56.841 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:00:26.078 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:00:26.136 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:00:32.283 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:00:32.338 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:01:15.600 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 22:01:18.568 [[33mwarn[39m] 	TypeError: SearchService.add is not a function
+TypeError: SearchService.add is not a function
+    at add (/root/toy/remember_me/back/src/controllers/search.ts:27:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 22:01:21.423 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-13 22:01:34.147 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:01:34.208 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:09:46.352 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:09:46.409 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:13:11.193 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:13:11.349 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:13:22.505 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:13:22.570 [[32minfo[39m] 	Connected to mongodb 
+2020-07-13 22:47:31.163 [[32minfo[39m] 	Running in development mode 
+2020-07-13 22:47:31.286 [[32minfo[39m] 	Connected to mongodb 

@@ -1,0 +1,527 @@
+2020-07-15 13:26:15.775 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:26:16.234 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:30:00.111 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:30:00.169 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:30:58.674 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:30:58.846 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:31:16.910 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:31:16.988 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:31:33.488 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:31:33.552 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:34:50.479 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:34:50.537 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:34:56.613 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:34:56.816 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:35:00.263 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:35:00.504 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:35:10.810 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:35:10.891 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:35:33.298 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:35:33.359 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:35:49.676 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:35:49.734 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:39:51.710 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:40:00.095 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:40:00.154 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:41:56.744 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:41:56.894 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:42:08.256 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:42:08.329 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:42:23.503 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:42:23.542 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:43:03.688 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:43:03.873 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:43:58.327 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:43:58.387 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:45:04.942 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:45:05.006 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:45:54.800 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:45:54.920 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:46:01.514 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:46:01.570 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:46:09.603 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:46:09.664 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:46:19.060 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:46:19.125 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:49:02.527 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:49:02.585 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:53:22.568 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:53:22.624 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:54:33.770 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:54:33.807 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:57:43.712 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:57:43.803 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:57:53.121 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:57:53.175 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 13:58:23.589 [[33mwarn[39m] 	TypeError: SearchService.add_name_kor is not a function
+TypeError: SearchService.add_name_kor is not a function
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 13:58:40.168 [[33mwarn[39m] 	TypeError: SearchService.add_name_kor is not a function
+TypeError: SearchService.add_name_kor is not a function
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 13:58:41.812 [[33mwarn[39m] 	TypeError: SearchService.add_name_kor is not a function
+TypeError: SearchService.add_name_kor is not a function
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 13:58:42.764 [[33mwarn[39m] 	TypeError: SearchService.add_name_kor is not a function
+TypeError: SearchService.add_name_kor is not a function
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 13:59:13.947 [[32minfo[39m] 	Running in development mode 
+2020-07-15 13:59:14.009 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:01:14.244 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:01:14.301 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:01:43.792 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:01:43.881 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:01:59.409 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:01:59.505 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:02:42.334 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:02:42.411 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:02:57.624 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:02:57.687 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:07:30.694 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:07:30.800 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:07:39.767 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:07:39.825 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:07:49.210 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:07:49.268 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:21:53.047 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:21:53.104 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:22:03.150 [[33mwarn[39m] 	TypeError: Cannot read property 'value' of undefined
+TypeError: Cannot read property 'value' of undefined
+    at Object.entries.forEach.arr (/root/toy/remember_me/back/src/services/search.ts:14:45)
+    at Array.forEach (<anonymous>)
+    at parse_search_options (/root/toy/remember_me/back/src/services/search.ts:13:45)
+    at Object.add_name_kor (/root/toy/remember_me/back/src/services/search.ts:147:30)
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13) 
+2020-07-15 14:23:52.199 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:23:52.299 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:24:54.767 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:24:54.827 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:25:18.026 [[33mwarn[39m] 	TypeError: Cannot read property 'value' of undefined
+TypeError: Cannot read property 'value' of undefined
+    at Object.entries.forEach.arr (/root/toy/remember_me/back/src/services/search.ts:14:45)
+    at Array.forEach (<anonymous>)
+    at parse_search_options (/root/toy/remember_me/back/src/services/search.ts:13:45)
+    at Object.add_name_kor (/root/toy/remember_me/back/src/services/search.ts:149:30)
+    at add_name_kor (/root/toy/remember_me/back/src/controllers/search.ts:43:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13) 
+2020-07-15 14:28:47.295 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:28:47.358 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:35:38.839 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:35:38.902 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:38:14.732 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:38:14.812 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:38:57.540 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:38:57.596 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:40:17.295 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:40:17.358 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:41:46.304 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:41:46.362 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:42:31.129 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:42:31.312 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:43:19.968 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:43:20.028 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:50:04.568 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:50:04.624 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:50:37.199 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:50:37.254 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:54:16.508 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:54:16.577 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:54:23.991 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 14:54:36.695 [[33mwarn[39m] 	TypeError: SearchService.main is not a function
+TypeError: SearchService.main is not a function
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3) 
+2020-07-15 14:54:56.671 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:54:56.730 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:56:40.216 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:56:40.275 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 14:58:52.576 [[32minfo[39m] 	Running in development mode 
+2020-07-15 14:58:52.747 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:00:47.524 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:00:47.580 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:04:30.402 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:04:30.576 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:04:39.071 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:04:39.125 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:11:52.768 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:11:53.617 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:12:35.487 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:12:35.544 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:13:59.840 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:13:59.948 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:14:31.359 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:14:31.486 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:14:43.200 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:14:43.300 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:15:06.539 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:15:07.951 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:15:09.249 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:15:09.308 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:15:20.312 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:15:20.367 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:17:54.407 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:17:54.471 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:18:32.147 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:18:32.200 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:28:10.467 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:28:10.524 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:28:32.247 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:28:32.305 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:29:28.287 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:29:28.349 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:30:38.858 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:30:38.914 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:30:48.904 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:30:48.968 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:31:34.161 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:31:34.345 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:31:44.744 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:31:44.807 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:36:16.929 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:36:16.985 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:36:27.620 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:36:27.686 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:39:15.113 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:39:15.169 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:39:18.838 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:39:18.899 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:47:58.032 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:47:58.150 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 15:57:45.243 [[32minfo[39m] 	Running in development mode 
+2020-07-15 15:57:45.346 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:08:15.328 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:08:15.392 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:10:05.332 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:10:05.393 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:11:21.239 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:11:21.322 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:23:02.795 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:23:03.049 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:29:14.771 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:29:14.836 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:31:03.984 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:31:04.073 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:31:20.305 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:31:20.380 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:32:04.979 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:32:05.039 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:33:00.161 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:33:00.217 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:33:28.838 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:33:28.894 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:37:16.455 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:37:16.513 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:41:10.112 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:41:10.170 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 16:43:12.212 [[32minfo[39m] 	Running in development mode 
+2020-07-15 16:43:12.313 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:21:59.044 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:22:00.738 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:30:04.115 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:30:04.214 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:32:09.814 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:32:09.875 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:32:30.538 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:32:30.602 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:34:31.544 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:34:31.661 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:36:21.576 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:36:21.676 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:37:24.116 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:37:24.199 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 17:39:25.228 [[32minfo[39m] 	Running in development mode 
+2020-07-15 17:39:25.282 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 18:00:03.600 [[32minfo[39m] 	Running in development mode 
+2020-07-15 18:00:04.798 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 18:54:13.112 [[32minfo[39m] 	Running in development mode 
+2020-07-15 18:54:13.181 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 18:58:58.520 [[32minfo[39m] 	Running in development mode 
+2020-07-15 18:58:58.576 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:02:20.713 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:02:20.771 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:02:37.201 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:02:37.389 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:03:01.321 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:03:01.396 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:04:53.122 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:04:53.230 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:06:28.794 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:06:28.945 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:07:42.247 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:07:42.310 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:09:17.612 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:09:17.710 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:14:34.964 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:14:35.042 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:17:36.844 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:17:36.910 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:19:04.257 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:19:04.316 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:20:43.396 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:20:43.505 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:20:53.439 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:20:53.506 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:24:10.823 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:24:10.885 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:26:48.397 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:26:48.500 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:27:07.141 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:27:07.198 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:27:46.144 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:27:46.301 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:29:34.948 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:29:35.075 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:30:25.834 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:30:25.910 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:30:29.936 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:30:30.028 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:30:52.435 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:30:52.502 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:31:29.557 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:31:29.751 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:32:56.350 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:32:56.426 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:33:21.261 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:33:21.321 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:33:46.173 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:33:46.243 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:34:22.157 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:34:22.225 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:35:13.780 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:35:13.875 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:35:21.908 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:35:22.018 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:36:10.759 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:36:11.013 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:36:41.980 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:36:42.077 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:36:49.582 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:36:49.662 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:37:09.407 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:37:09.474 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:37:16.488 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:37:16.588 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:37:26.832 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:37:26.910 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:44:44.072 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:44:46.948 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:45:43.532 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:45:43.599 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:48:46.165 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:48:46.270 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:50:08.511 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:50:08.583 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:50:38.228 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:50:38.300 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:51:09.379 [[33mwarn[39m] 	TypeError: Cannot use 'in' operator to search for 'amount' in {"amount": 20189, "unit": null}
+TypeError: Cannot use 'in' operator to search for 'amount' in {"amount": 20189, "unit": null}
+    at Object.add_option (/root/toy/remember_me/back/src/services/search.ts:290:20)
+    at add_birth_year (/root/toy/remember_me/back/src/controllers/search.ts:84:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 19:54:52.068 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:54:52.129 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:56:46.460 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:56:46.564 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:56:56.176 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:56:56.233 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:57:39.795 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:57:39.856 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 19:58:30.028 [[32minfo[39m] 	Running in development mode 
+2020-07-15 19:58:30.121 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:02:32.396 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:02:32.453 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:02:42.825 [[33mwarn[39m] 	TypeError: Cannot use 'in' operator to search for 'amount' in {"amount": 2018, "unit": null}
+TypeError: Cannot use 'in' operator to search for 'amount' in {"amount": 2018, "unit": null}
+    at Object.add_option (/root/toy/remember_me/back/src/services/search.ts:293:17)
+    at add_birth_year (/root/toy/remember_me/back/src/controllers/search.ts:84:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:04:15.853 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:04:16.034 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:04:25.484 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:04:25.544 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:04:39.150 [[33mwarn[39m] 	SyntaxError: Unexpected token o in JSON at position 1
+SyntaxError: Unexpected token o in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at add_birth_year (/root/toy/remember_me/back/src/controllers/search.ts:84:114)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:05:19.856 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:05:20.022 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:05:53.104 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:05:53.161 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:06:50.054 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:06:50.152 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:07:24.557 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:07:24.680 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:07:44.674 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:07:44.751 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:08:01.348 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:08:01.408 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:08:15.495 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:08:15.553 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:10:37.951 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:10:38.009 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:12:12.794 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:12:12.940 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:13:31.068 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:13:31.154 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:13:41.128 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:13:41.218 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:13:45.302 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:13:45.366 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:15:06.551 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:15:06.622 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:17:04.745 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:17:04.865 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:17:09.942 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:17:10.004 [[32minfo[39m] 	Connected to mongodb 

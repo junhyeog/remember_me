@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --watch ./src www.ts",
+    "devO": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register --watch ./src www.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --watch ./src www.ts",
     "prod": "ts-node -r tsconfig-paths/register --files www.ts --project tsconfig.json"
   },
   "husky": {

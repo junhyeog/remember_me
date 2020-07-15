@@ -19,23 +19,35 @@ export type BasicCard = {
   buttons?: Button[];
 }
 
+interface ContextParams extends Object {
+  name_kor?: String;
+  birth_year?: Number;
+  birth_month?: Number;
+  birth_day?: Number;
+}
+
+export type Context = {
+  name: String;
+  lifeSpan: Number;
+  params: ContextParams;
+}
+
 type ContextParamProp = {
   value: String;
   resolvedValue: String;
 }
 
-interface ContextParam extends Object {
+interface ReqContextParams extends Object {
   name_kor?: ContextParamProp;
   birth_year?: ContextParamProp;
   birth_month?: ContextParamProp;
   birth_day?: ContextParamProp;
 }
-
-export type Context = {
+export interface ReqContext {
   name: String;
-  lifeSpan?: Number;
-  ttl?: Number;
-  params: ContextParam;
+  lifespan: Number;
+  ttl: Number;
+  params: ReqContextParams;
 }
 export interface ClientExtra extends Object {
   page?: String;

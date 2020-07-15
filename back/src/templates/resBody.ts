@@ -7,14 +7,15 @@ type ResBodyProps = {
 }
 
 export default function ResBody(props: ResBodyProps) {
-  return {
+  const res = {
     version: '2.0',
     template: {
       outputs: props.outputs,
       quickReplies: props.quickReplies
     },
-    contexts: {
+    context: props.contexts ? {
       values: props.contexts
-    }
+    } : undefined
   };
+  return res;
 }
