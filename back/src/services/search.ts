@@ -57,7 +57,6 @@ export async function main():
   };
   return {
     result: ResBody({ outputs: [output1] }),
-    // result: ResBody({ outputs: [output1], contexts: [context1] }),
     success: true
   };
 }
@@ -128,7 +127,8 @@ export async function add_name_kor(name_kor: String, contexts: Context[]):
   }
   // outputs
   const output1 = SimpleText(txt);
-  const output2 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
+  const output2 = SimpleText(parse_search_options(contexts));
+  const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '옵션 추가/변경하기',
       action: 'block',
@@ -146,7 +146,7 @@ export async function add_name_kor(name_kor: String, contexts: Context[]):
   console.log();
   return {
     result: ResBody({
-      outputs: [output1, output2],
+      outputs: [output1, output2, output3],
       contexts
     }),
     success: true

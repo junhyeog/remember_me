@@ -6,5 +6,6 @@ import rejectInval from 'middlewares/rejectInval';
 const router = express.Router();
 
 router.post('/birth', birthVal, rejectInval, Controller.birth);
+router.post('/birth/sub', Controller.birth_sub);
 
 export default router;

@@ -37,3 +37,11 @@ export type Context = {
   ttl?: Number;
   params: ContextParam;
 }
+export interface ClientExtra extends Object {
+  page?: String;
+  birth?: {
+    year?: String;
+    month?: String;
+    day?: String;
+  }
+}
