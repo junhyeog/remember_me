@@ -202,8 +202,6 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
     }
   }
   // output
-  const originText = parseContext(newContext);
-  console.log('asdasdasdasd', originText);
   const output2 = SimpleText('변경 후 context\n\n' + parseContext(newContext));
   const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -219,7 +217,6 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
       blockId: '5f0ae7303e869f00019d1a52' // search_search // TODO id 수정
     }
   ]);
-  console.log('teset', newContext);
   return {
     result: ResBody({
       outputs: [output2, output3],
