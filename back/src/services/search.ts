@@ -1,4 +1,4 @@
-import { ServiceResult, SysNumber, Patrtc, PName, NumOptionName } from 'utils/types';
+import { ServiceResult, SysNumber, Patrtc, PName, OptionName } from 'utils/types';
 import { RESULT_SIZE } from 'utils/constant';
 import { ResBody, BasicCard, SimpleText } from 'templates';
 import { Context, QuickReply, ReqContext } from 'templates/types';
@@ -31,26 +31,25 @@ function parseReqContexts(reqContexts?: ReqContext[]) {
 }
 
 function parseContext(context?: Context) {
-  let txt = '현재 설정된 옵션이 없습니다.\n';
+  let txt = '현재 설정된 옵션:\n'
   if (context) {
-    const search_options = context;
-    if (search_options && Object.entries(search_options.params).length > 0) {
-      txt = '현재 설정된 옵션:\n'
-      Object.entries(search_options.params).forEach(arr => {
-        if (arr[0] === 'name_kor' && arr[1]) {
-          txt += '성함: ' + arr[1] + '\n'
-        }
-        else if (arr[0] === 'birth_year' && arr[1]) {
-          txt += '출생 연도: ' + arr[1] + '\n'
-        }
-        else if (arr[0] === 'birth_month' && arr[1]) {
-          txt += '출생 월: ' + arr[1] + '\n'
-        }
-        else if (arr[0] === 'birth_day' && arr[1]) {
-          txt += '출생 일: ' + arr[1] + '\n'
-        }
-      })
-    }
+    Object.entries(context.params).forEach(arr => {
+      if (arr[0] === 'name_kor' && arr[1]) {
+        txt += '성함: ' + arr[1] + '\n'
+      }
+      else if (arr[0] === 'birth_year' && arr[1]) {
+        txt += '출생 연도: ' + arr[1] + '\n'
+      }
+      else if (arr[0] === 'birth_month' && arr[1]) {
+        txt += '출생 월: ' + arr[1] + '\n'
+      }
+      else if (arr[0] === 'birth_day' && arr[1]) {
+        txt += '출생 일: ' + arr[1] + '\n'
+      }
+    })
+  }
+  if (txt === '현재 설정된 옵션:\n') {
+    txt = '현재 설정된 옵션이 없습니다.\n';
   }
   return txt.slice(0, -1);
 }
@@ -160,9 +159,11 @@ export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARC
 }
 
 /**
- * @description 검색 옵션 추가 - add_birth, ... 블럭에서 넘어옴
+ * @description 검색 옵션 추가 - add, add_birth, ... 블럭에서 넘어옴
  */
-export async function add_option(option: NumOptionName, val: SysNumber | String, reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_OPTION', Object> {
+export async function add_option(option: OptionName, val: SysNumber | String, reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_OPTION', Object> {
+  console.log();
+  console.log();
   console.log('[add_number_options] param test (option): ', option);
   console.log();
   console.log('[add_number_options] param test (val): ', val);
@@ -172,10 +173,8 @@ export async function add_option(option: NumOptionName, val: SysNumber | String,
   //? name_kor 업데이트
   let newContext = reqContextsToContext(reqContexts)
   if (option === 'name_kor' && typeof val === 'string') {
-    if (newContext) {
-      if (val !== '취소') {
-        newContext.params.name_kor = val;
-      }
+    if (newContext?.params.name_kor) {
+      newContext.params.name_kor = val;
     }
     else {
       newContext = {
@@ -184,6 +183,7 @@ export async function add_option(option: NumOptionName, val: SysNumber | String,
         params: {
           name_kor: val
         }
+
       }
     }
   }
@@ -203,7 +203,7 @@ export async function add_option(option: NumOptionName, val: SysNumber | String,
   }
   // output
   const originText = parseContext(newContext);
-
+  console.log('asdasdasdasd', originText);
   const output2 = SimpleText('변경 후 context\n\n' + parseContext(newContext));
   const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -219,7 +219,7 @@ export async function add_option(option: NumOptionName, val: SysNumber | String,
       blockId: '5f0ae7303e869f00019d1a52' // search_search // TODO id 수정
     }
   ]);
-
+  console.log('teset', newContext);
   return {
     result: ResBody({
       outputs: [output2, output3],

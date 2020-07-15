@@ -525,3 +525,455 @@ SyntaxError: Unexpected token o in JSON at position 1
 2020-07-15 20:17:04.865 [[32minfo[39m] 	Connected to mongodb 
 2020-07-15 20:17:09.942 [[32minfo[39m] 	Running in development mode 
 2020-07-15 20:17:10.004 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:25:36.743 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:25:39.252 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:29:16.313 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:29:16.389 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:29:29.656 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:29:29.726 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:29:38.662 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:29:38.723 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:30:42.412 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:30:42.496 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:44:34.872 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:44:34.959 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:46:05.991 [[33mwarn[39m] 	SyntaxError: Unexpected token u in JSON at position 0
+SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:48:25.931 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:48:25.989 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:48:50.770 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:48:50.949 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:49:06.659 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:49:06.716 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:49:48.277 [[33mwarn[39m] 	SyntaxError: Unexpected token 이 in JSON at position 0
+SyntaxError: Unexpected token 이 in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:50.471 [[33mwarn[39m] 	SyntaxError: Unexpected token 임 in JSON at position 0
+SyntaxError: Unexpected token 임 in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:51.006 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:52.328 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:52.333 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:54.059 [[33mwarn[39m] 	SyntaxError: Unexpected token ㄴ in JSON at position 0
+SyntaxError: Unexpected token ㄴ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:49:56.096 [[33mwarn[39m] 	SyntaxError: Unexpected token ㄱ in JSON at position 0
+SyntaxError: Unexpected token ㄱ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:07.367 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:08.090 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:32.844 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:50:32.906 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:50:46.452 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:46.897 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:47.259 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:47.696 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:58.857 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:50:59.370 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:51:31.874 [[33mwarn[39m] 	SyntaxError: Unexpected token 이 in JSON at position 0
+SyntaxError: Unexpected token 이 in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:51:48.924 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:51:48.981 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:51:53.688 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:51:54.279 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:51:54.777 [[33mwarn[39m] 	SyntaxError: Unexpected token ㅁ in JSON at position 0
+SyntaxError: Unexpected token ㅁ in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at add_option (/root/toy/remember_me/back/src/controllers/search.ts:129:61)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 20:52:47.384 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:52:47.442 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:53:45.798 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:53:45.978 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:53:55.500 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:53:55.576 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:54:06.407 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:54:06.465 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:54:48.327 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:54:48.385 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:55:21.464 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:55:21.528 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 20:58:46.633 [[32minfo[39m] 	Running in development mode 
+2020-07-15 20:58:46.689 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:01:20.887 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:01:21.004 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:01:31.226 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:01:31.285 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:04:35.679 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:04:35.737 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:05:23.671 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:05:23.843 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:05:43.764 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:05:43.821 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:05:55.076 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:05:55.133 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:06:05.531 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:06:05.587 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:06:10.683 [[33mwarn[39m] 	TypeError: templates_1.ResBody is not a function
+TypeError: templates_1.ResBody is not a function
+    at Object.main (/root/toy/remember_me/back/src/services/search.ts:91:13)
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:12:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-15 21:06:26.107 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:06:26.167 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:07:59.409 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:07:59.506 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:08:39.029 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:08:39.127 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:09:47.500 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:09:47.559 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:15:36.168 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:15:36.226 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:16:54.134 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:16:54.314 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:17:00.782 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:17:00.851 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:17:09.828 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:17:09.886 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:17:59.551 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:17:59.609 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:19:53.592 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:19:53.796 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:20:12.055 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:20:12.113 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:20:46.255 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:20:46.317 [[32minfo[39m] 	Connected to mongodb 

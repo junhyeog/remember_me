@@ -62,5 +62,5 @@ export type SysNumber = {
   unit?: any;
 }
 
-export type NumOptionName = 'name_kor' | 'birth_year' | 'birth_month' | 'birth_day';
+export type OptionName = 'name_kor' | 'birth_year' | 'birth_month' | 'birth_day';
 
