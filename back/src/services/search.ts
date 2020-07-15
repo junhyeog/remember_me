@@ -6,26 +6,38 @@ import BlockId from 'utils/blockId';
 
 //? ReqContext parsing
 function parseReqContexts(reqContexts?: ReqContext[]) {
-  let txt = '현재 설정된 옵션이 없습니다.\n';
+  let txt = '현재 설정된 옵션:\n'
   if (reqContexts) {
     const search_options = reqContexts.find(obj => obj.name === 'search_options');
-    if (search_options && Object.entries(search_options.params).length > 0) {
+    if (search_options) {
       txt = '현재 설정된 옵션:\n'
       Object.entries(search_options.params).forEach(arr => {
         if (arr[0] === 'name_kor' && arr[1]) {
           txt += '성함: ' + arr[1].value + '\n'
         }
-        else if (arr[0] === 'birth_year') {
+        else if (arr[0] === 'birth_year' && arr[1]) {
           txt += '출생 연도: ' + arr[1].value + '\n'
         }
-        else if (arr[0] === 'birth_month') {
+        else if (arr[0] === 'birth_month' && arr[1]) {
           txt += '출생 월: ' + arr[1].value + '\n'
         }
-        else if (arr[0] === 'birth_day') {
+        else if (arr[0] === 'birth_day' && arr[1]) {
           txt += '출생 일: ' + arr[1].value + '\n'
+        }
+        else if (arr[0] === 'death_year' && arr[1]) {
+          txt += '사망 연도: ' + arr[1].value + '\n'
+        }
+        else if (arr[0] === 'death_month' && arr[1]) {
+          txt += '사망 월: ' + arr[1].value + '\n'
+        }
+        else if (arr[0] === 'death_day' && arr[1]) {
+          txt += '사망 일: ' + arr[1].value + '\n'
         }
       })
     }
+  }
+  if (txt === '현재 설정된 옵션:\n') {
+    txt = '현재 설정된 옵션이 없습니다.\n';
   }
   return txt.slice(0, -1);
 }
@@ -46,6 +58,15 @@ function parseContext(context?: Context) {
       else if (arr[0] === 'birth_day' && arr[1]) {
         txt += '출생 일: ' + arr[1] + '\n'
       }
+      else if (arr[0] === 'death_year' && arr[1]) {
+        txt += '사망 연도: ' + arr[1] + '\n'
+      }
+      else if (arr[0] === 'death_month' && arr[1]) {
+        txt += '사망 월: ' + arr[1] + '\n'
+      }
+      else if (arr[0] === 'death_day' && arr[1]) {
+        txt += '사망 일: ' + arr[1] + '\n'
+      }
     })
   }
   if (txt === '현재 설정된 옵션:\n') {
@@ -63,9 +84,14 @@ function reqContextsToContext(reqContexts?: ReqContext[]) {
     lifeSpan: 1,
     params: {
       name_kor: search_options.params.name_kor?.value,
+      //
       birth_year: search_options.params.birth_year?.value ? Number(search_options.params.birth_year.value) : undefined,
       birth_month: search_options.params.birth_month?.value ? Number(search_options.params.birth_month.value) : undefined,
       birth_day: search_options.params.birth_day?.value ? Number(search_options.params.birth_day.value) : undefined,
+      //
+      death_year: search_options.params.death_year?.value ? Number(search_options.params.death_year.value) : undefined,
+      death_month: search_options.params.death_month?.value ? Number(search_options.params.death_month.value) : undefined,
+      death_day: search_options.params.death_day?.value ? Number(search_options.params.death_day.value) : undefined,
     }
   }
   return context;
@@ -114,7 +140,7 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
       label: '사망 일자',
       action: 'block',
       messageText: '사망 일자',
-      blockId: '5f0ae7303e869f00019d1a52' // search_add_birth_month // TODO id 수정
+      blockId: BlockId.search_add_death
     }
   ]);
   return {
@@ -159,7 +185,42 @@ export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARC
 }
 
 /**
- * @description 검색 옵션 추가 - add, add_birth, ... 블럭에서 넘어옴
+ * @description 검색 옵션에 추가할 death 옵션 선택 - add 블럭에서 넘어옴
+ */
+export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_DEATH', Object> {
+  console.log('[add_death] param test(contexts): ', reqContexts);
+  console.log();
+  const output1 = SimpleText(parseReqContexts(reqContexts));
+  const output2 = BasicCard('사망 정보로 검색하기', '어떤 옵션을 추가/변경하시겠습니까?', [
+    {
+      label: '사망 연도',
+      action: 'block',
+      messageText: '사망 연도',
+      blockId: BlockId.search_add_death_year
+    },
+    {
+      label: '사망 월',
+      action: 'block',
+      messageText: '사망 월',
+      blockId: BlockId.search_add_death_month
+    },
+    {
+      label: '사망 일',
+      action: 'block',
+      messageText: '사망 일',
+      blockId: BlockId.search_add_death_day
+    },
+  ]);
+  return {
+    result: ResBody({
+      outputs: [output1, output2],
+    }),
+    success: true
+  };
+}
+
+/**
+ * @description 검색 옵션 추가 - add, add_birth, add_death 블럭에서 넘어옴
  */
 export async function add_option(option: OptionName, val: SysNumber | String, reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_OPTION', Object> {
   console.log();
@@ -173,7 +234,7 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
   //? name_kor 업데이트
   let newContext = reqContextsToContext(reqContexts)
   if (option === 'name_kor' && typeof val === 'string') {
-    if (newContext?.params.name_kor) {
+    if (newContext) {
       newContext.params.name_kor = val;
     }
     else {

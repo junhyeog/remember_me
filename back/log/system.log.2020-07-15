@@ -981,3 +981,9 @@ TypeError: templates_1.ResBody is not a function
 2020-07-15 21:22:11.976 [[32minfo[39m] 	Connected to mongodb 
 2020-07-15 21:22:24.832 [[32minfo[39m] 	Running in development mode 
 2020-07-15 21:22:24.895 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:56:55.814 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:56:55.873 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 21:59:50.109 [[32minfo[39m] 	Running in development mode 
+2020-07-15 21:59:50.221 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:00:00.308 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:00:00.379 [[32minfo[39m] 	Connected to mongodb 

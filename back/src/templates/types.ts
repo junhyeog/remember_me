@@ -24,6 +24,9 @@ interface ContextParams extends Object {
   birth_year?: Number;
   birth_month?: Number;
   birth_day?: Number;
+  death_year?: Number;
+  death_month?: Number;
+  death_day?: Number;
 }
 
 export type Context = {
@@ -42,6 +45,9 @@ interface ReqContextParams extends Object {
   birth_year?: ContextParamProp;
   birth_month?: ContextParamProp;
   birth_day?: ContextParamProp;
+  death_year?: ContextParamProp;
+  death_month?: ContextParamProp;
+  death_day?: ContextParamProp;
 }
 export interface ReqContext {
   name: String;
