@@ -14,7 +14,9 @@ const BlockId = {
   search_add_death_year: '5f0ef5cd06d5d4000113c0a9',
   search_add_death_month: '5f0ef5d73ed1e40001f5f232',
   search_add_death_day: '5f0ef5e1d3e2ed0001228a02',
-
+  //
+  search_result_main: '5f0efe26dc3981000163bdb7',
+  search_result_sub: '5f0f021fd3e2ed0001228a11',
   //
   birth_equal: '5f036e5c2ed9de0001ebdce8',
   birth_equal_sub: '5f0da212571b05000135b5cf'

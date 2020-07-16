@@ -1,82 +1,83 @@
 import { ServiceResult, SysNumber, Patrtc, PName, OptionName } from 'utils/types';
 import { RESULT_SIZE } from 'utils/constant';
 import { ResBody, BasicCard, SimpleText } from 'templates';
-import { Context, QuickReply, ReqContext } from 'templates/types';
+import { Context, QuickReply, ReqContext, ClientExtra } from 'templates/types';
 import BlockId from 'utils/blockId';
+import { birth } from './patrtc';
+import PatrtcModel from 'models/patrtc';
 
 //? ReqContext parsing
 function parseReqContexts(reqContexts?: ReqContext[]) {
-  let txt = '현재 설정된 옵션:\n'
+  let txt = '현재 설정된 옵션:\n\n'
   if (reqContexts) {
     const search_options = reqContexts.find(obj => obj.name === 'search_options');
     if (search_options) {
-      txt = '현재 설정된 옵션:\n'
+      txt = '현재 설정된 옵션:\n\n'
       Object.entries(search_options.params).forEach(arr => {
         if (arr[0] === 'name_kor' && arr[1]) {
-          txt += '성함: ' + arr[1].value + '\n'
+          txt += '성함: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'birth_year' && arr[1]) {
-          txt += '출생 연도: ' + arr[1].value + '\n'
+          txt += '출생 연도: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'birth_month' && arr[1]) {
-          txt += '출생 월: ' + arr[1].value + '\n'
+          txt += '출생 월: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'birth_day' && arr[1]) {
-          txt += '출생 일: ' + arr[1].value + '\n'
+          txt += '출생 일: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'death_year' && arr[1]) {
-          txt += '사망 연도: ' + arr[1].value + '\n'
+          txt += '사망 연도: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'death_month' && arr[1]) {
-          txt += '사망 월: ' + arr[1].value + '\n'
+          txt += '사망 월: ' + arr[1].value + '\n\n'
         }
         else if (arr[0] === 'death_day' && arr[1]) {
-          txt += '사망 일: ' + arr[1].value + '\n'
+          txt += '사망 일: ' + arr[1].value + '\n\n'
         }
       })
     }
   }
-  if (txt === '현재 설정된 옵션:\n') {
+  if (txt === '현재 설정된 옵션:\n\n') {
     txt = '현재 설정된 옵션이 없습니다.\n';
   }
   return txt.slice(0, -1);
 }
 
 function parseContext(context?: Context) {
-  let txt = '현재 설정된 옵션:\n'
+  let txt = '현재 설정된 옵션:\n\n'
   if (context) {
     Object.entries(context.params).forEach(arr => {
       if (arr[0] === 'name_kor' && arr[1]) {
-        txt += '성함: ' + arr[1] + '\n'
+        txt += '성함: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'birth_year' && arr[1]) {
-        txt += '출생 연도: ' + arr[1] + '\n'
+        txt += '출생 연도: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'birth_month' && arr[1]) {
-        txt += '출생 월: ' + arr[1] + '\n'
+        txt += '출생 월: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'birth_day' && arr[1]) {
-        txt += '출생 일: ' + arr[1] + '\n'
+        txt += '출생 일: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'death_year' && arr[1]) {
-        txt += '사망 연도: ' + arr[1] + '\n'
+        txt += '사망 연도: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'death_month' && arr[1]) {
-        txt += '사망 월: ' + arr[1] + '\n'
+        txt += '사망 월: ' + arr[1] + '\n\n'
       }
       else if (arr[0] === 'death_day' && arr[1]) {
-        txt += '사망 일: ' + arr[1] + '\n'
+        txt += '사망 일: ' + arr[1] + '\n\n'
       }
     })
   }
-  if (txt === '현재 설정된 옵션:\n') {
+  if (txt === '현재 설정된 옵션:\n\n') {
     txt = '현재 설정된 옵션이 없습니다.\n';
   }
   return txt.slice(0, -1);
 }
 
-function reqContextsToContext(reqContexts?: ReqContext[]) {
-  if (!reqContexts) return undefined;
+function reqContextsToContext(reqContexts: ReqContext[]) {
   const search_options = reqContexts.find(obj => obj.name === 'search_options');
   if (!search_options) return undefined;
   const context: Context = {
@@ -224,12 +225,12 @@ export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARC
  */
 export async function add_option(option: OptionName, val: SysNumber | String, reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_OPTION', Object> {
   console.log();
-  console.log();
-  console.log('[add_number_options] param test (option): ', option);
-  console.log();
-  console.log('[add_number_options] param test (val): ', val);
-  console.log();
-  console.log('[add_number_options] param test (reqContexts): ', reqContexts);
+  console.log('====================================================');
+  console.log('[add_option] param test (option): ', option);
+  console.log('[add_option] param test (val): ', val);
+  console.log('[add_option] param test (reqContexts): /n', reqContexts);
+  console.log('[add_option] parse test (newContext): /n', JSON.stringify(reqContextsToContext(reqContexts)));
+  console.log('====================================================');
   console.log();
   //? name_kor 업데이트
   let newContext = reqContextsToContext(reqContexts)
@@ -244,13 +245,21 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
         params: {
           name_kor: val
         }
-
       }
     }
   }
-  else if (option !== 'name_kor') {
+  //? 날짜 옵션 업데이트
+  if (option !== 'name_kor') {
     if (newContext) {
+      console.log()
+      console.log('!!! 이전', JSON.stringify(newContext), JSON.stringify(val))
+      console.log()
+
       newContext.params[option] = (<SysNumber>val).amount;
+
+      console.log('!!! 이후', JSON.stringify(newContext), JSON.stringify(val))
+      console.log()
+
     }
     else {
       newContext = {
@@ -263,6 +272,7 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
     }
   }
   // output
+  const output1 = SimpleText('변경 후 context\n\n' + JSON.stringify(newContext));
   const output2 = SimpleText('변경 후 context\n\n' + parseContext(newContext));
   const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -275,14 +285,188 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
       label: '검색하기',
       action: 'block',
       messageText: '검색',
-      blockId: '5f0ae7303e869f00019d1a52' // search_search // TODO id 수정
+      blockId: BlockId.search_result_main
     }
   ]);
   return {
     result: ResBody({
-      outputs: [output2, output3],
+      outputs: [output1, output2, output3],
       contexts: newContext ? [newContext] : undefined
     }),
     success: true
   };
 }
+
+//! Result Services
+
+/**
+ * @description 검색 결과 반환
+ * @param contexts 검색 옵션
+ * @param clientExtra 페이지 정보를 String 형식으로 저장
+ */
+export async function result_main(reqContexts: ReqContext[], clientExtra?: ClientExtra): ServiceResult<'SEARCH/RESULT_MAIN', Object> {
+  console.log();
+  console.log('[result_main] param test (reqContexts): ', reqContexts);
+  console.log();
+  console.log('[result_main] param test (clientExtra): ', clientExtra);
+  console.log();
+  //* page 설정
+  let page = 0;
+  if (clientExtra?.page) {
+    page = Number(clientExtra.page);
+  }
+  //? DB 접근
+  const context = reqContextsToContext(reqContexts)
+  let query = PatrtcModel.find();
+  if (context) {
+    if (context.params.name_kor) {
+      query = query.find({ name_kor: context.params.name_kor });
+    }
+    if (context.params.birth_year) {
+      query = query.find({ birth_year: context.params.birth_year });
+    }
+    if (context.params.birth_month) {
+      query = query.find({ birth_month: context.params.birth_month });
+    }
+    if (context.params.birth_day) {
+      query = query.find({ birth_day: context.params.birth_day });
+    }
+    if (context.params.death_year) {
+      query = query.find({ death_year: context.params.death_year });
+    }
+    if (context.params.death_month) {
+      query = query.find({ death_month: context.params.death_month });
+    }
+    if (context.params.death_day) {
+      query = query.find({ death_day: context.params.death_day });
+    }
+  }
+  const result = await query.sort('name_kor').skip(page * RESULT_SIZE).limit(RESULT_SIZE);
+  let text = '후보:\n\n';
+  result.forEach((p) => {
+    text += p.name_kor;
+    text += '\n';
+  });
+  const nextQuick: QuickReply = {
+    label: '다음 결과',
+    action: 'block',
+    messageText: '다음 결과 보기',
+    blockId: BlockId.search_result_main,
+    extra: {
+      page: page + 1
+    }
+  }
+  const preQuick: QuickReply = {
+    label: '이전 결과',
+    action: 'block',
+    messageText: '이전 결과 보기',
+    blockId: BlockId.search_result_main,
+    extra: {
+      page: page - 1
+    }
+  }
+  const newQuery: QuickReply = {
+    label: '새로 검색',
+    action: 'block',
+    messageText: '새로 검색',
+    blockId: BlockId.search_main,
+    extra: {
+    }
+  }
+  let quickReplies: QuickReply[] = [];
+  if (result.length >= RESULT_SIZE) {
+    quickReplies.push(nextQuick);
+  }
+  if (page > 0) {
+    quickReplies.push(preQuick);
+  }
+  quickReplies.push(newQuery);
+  return {
+    result: ResBody({ outputs: [SimpleText(text)], quickReplies }),
+    success: true
+  };
+}
+
+
+// /**
+//  * @description 이전 결과 다음 결과를 위한 블럭
+//  * @param contexts 검색 옵션
+//  * @param clientExtra 페이지 정보를 String 형식으로 저장
+//  */
+// export async function result_sub(reqContexts: ReqContext[], clientExtra?: ClientExtra): ServiceResult<'SEARCH/RESULT_SUB', Object> {
+//   //* page 설정
+//   let page = 0;
+//   if (clientExtra?.page) {
+//     page = Number(clientExtra.page);
+//   }
+//   //? DB 접근
+//   const context = reqContextsToContext(reqContexts)
+//   let query = PatrtcModel.find();
+//   if (context) {
+//     if (context.params.name_kor) {
+//       query = query.find({ name_kor: context.params.name_kor });
+//     }
+//     if (context.params.birth_year) {
+//       query = query.find({ birth_year: context.params.birth_year });
+//     }
+//     if (context.params.birth_month) {
+//       query = query.find({ birth_month: context.params.birth_month });
+//     }
+//     if (context.params.birth_day) {
+//       query = query.find({ birth_day: context.params.birth_day });
+//     }
+//     if (context.params.death_year) {
+//       query = query.find({ death_year: context.params.death_year });
+//     }
+//     if (context.params.death_month) {
+//       query = query.find({ death_month: context.params.death_month });
+//     }
+//     if (context.params.death_day) {
+//       query = query.find({ death_day: context.params.death_day });
+//     }
+//   }
+//   const result = await query.sort('name_kor').skip(page * RESULT_SIZE).limit(RESULT_SIZE);
+//   let text = '후보:\n\n';
+//   result.forEach((p) => {
+//     text += p.name_kor;
+//     text += '\n';
+//   });
+//   const nextQuick: QuickReply = {
+//     label: '다음 결과',
+//     action: 'block',
+//     messageText: '다음 결과 보기',
+//     blockId: BlockId.search_result_sub,
+//     extra: {
+//       page: page + 1
+//     }
+//   }
+//   const preQuick: QuickReply = {
+//     label: '이전 결과',
+//     action: 'block',
+//     messageText: '이전 결과 보기',
+//     blockId: BlockId.search_result_sub,
+//     extra: {
+//       page: page - 1
+//     }
+//   }
+//   const newQuery: QuickReply = {
+//     label: '새로 검색',
+//     action: 'block',
+//     messageText: '새로 검색',
+//     blockId: BlockId.search_main,
+//     extra: {
+//     }
+//   }
+//   let quickReplies: QuickReply[] = [];
+//   if (result.length >= RESULT_SIZE) {
+//     quickReplies.push(nextQuick);
+//   }
+//   if (page > 0) {
+//     quickReplies.push(preQuick);
+//   }
+//   quickReplies.push(newQuery);
+//   return {
+//     result: ResBody({ outputs: [SimpleText(text)], quickReplies }),
+//     success: true
+//   };
+// }

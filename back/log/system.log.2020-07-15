@@ -987,3 +987,33 @@ TypeError: templates_1.ResBody is not a function
 2020-07-15 21:59:50.221 [[32minfo[39m] 	Connected to mongodb 
 2020-07-15 22:00:00.308 [[32minfo[39m] 	Running in development mode 
 2020-07-15 22:00:00.379 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:06:25.242 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:06:25.299 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:07:34.911 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:07:34.985 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:09:09.336 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:09:09.446 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:27:18.612 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:27:18.670 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:28:14.938 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:28:15.045 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:28:23.906 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:28:23.963 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:37:53.034 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:37:53.093 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:43:15.435 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:43:15.521 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:44:51.336 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:44:51.395 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:46:21.749 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:46:21.903 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:46:52.327 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:46:52.385 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:50:39.159 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:50:39.237 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:51:55.311 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:51:55.418 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:52:15.751 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:52:15.821 [[32minfo[39m] 	Connected to mongodb 
+2020-07-15 22:55:49.731 [[32minfo[39m] 	Running in development mode 
+2020-07-15 22:55:49.790 [[32minfo[39m] 	Connected to mongodb 
