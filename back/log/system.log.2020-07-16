@@ -50,3 +50,7 @@ TypeError: templates_1.BasicCard is not a function
     at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
 2020-07-16 14:22:00.548 [[32minfo[39m] 	Running in development mode 
 2020-07-16 14:22:00.611 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 15:05:29.405 [[32minfo[39m] 	Running in development mode 
+2020-07-16 15:05:29.466 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 16:41:28.007 [[32minfo[39m] 	Running in development mode 
+2020-07-16 16:41:28.173 [[32minfo[39m] 	Connected to mongodb 

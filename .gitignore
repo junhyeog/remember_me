@@ -1,7 +1,7 @@
 /**/*yarn.lock
 /**/*package-lock.json
 /**/*.vscode
-
+*.pem
 
 .vscode/*
 !.vscode/settings.json

@@ -14,9 +14,9 @@ export interface Patrtc {
   birth_year: Number;
   birth_month: Number;
   birth_day: Number;
-  die_year: Number;
-  die_month: Number;
-  die_day: Number;
+  death_year: Number;
+  death_month: Number;
+  death_day: Number;
   place: String;
   serial: String;
   kind: String;
