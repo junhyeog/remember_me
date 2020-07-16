@@ -10,8 +10,7 @@ import { ClientExtra, QuickReply } from 'templates/types';
  * @description 생년월일에 해당하는 호국선열들을 simpleText로 반환
  * @param birth : {year: Number, month: Number, day: Number}
  */
-export async function birth(birth: Date, clientExtra?: ClientExtra):
-  ServiceResult<'PATRTC/BIRTH', Object> {
+export async function birth(birth: Date, clientExtra?: ClientExtra): ServiceResult<'PATRTC/BIRTH', Object> {
   console.log('patrtc birth param test(birth): ', JSON.stringify(birth));
   console.log('patrtc birth param test(clientExtra): ', JSON.stringify(clientExtra));
   //! page 설정
@@ -35,9 +34,6 @@ export async function birth(birth: Date, clientExtra?: ClientExtra):
     text += '\n';
   });
   console.log('patrtc birth output test(text): ', text);
-  // page 옵션 설정
-  if (page === 0) {
-  }
   const nextQuick: QuickReply = {
     label: '다음 결과',
     action: 'block',
@@ -47,7 +43,7 @@ export async function birth(birth: Date, clientExtra?: ClientExtra):
       birth: birth,
       page: page + 1
     }
-  }
+  };
   const preQuick: QuickReply = {
     label: '이전 결과',
     action: 'block',
@@ -57,7 +53,7 @@ export async function birth(birth: Date, clientExtra?: ClientExtra):
       birth: birth,
       page: page - 1
     }
-  }
+  };
   const newQuery: QuickReply = {
     label: '새로 검색',
     action: 'block',
@@ -65,8 +61,8 @@ export async function birth(birth: Date, clientExtra?: ClientExtra):
     blockId: BlockId.birth_equal,
     extra: {
     }
-  }
-  let quickReplies: QuickReply[] = [];
+  };
+  const quickReplies: QuickReply[] = [];
   if (result.length >= RESULT_SIZE) {
     quickReplies.push(nextQuick);
   }
@@ -100,7 +96,7 @@ export async function birth_sub(clientExtra?: ClientExtra):
     page = Number(clientExtra.page);
   }
   //! birth 설정
-  let birth = clientExtra?.birth;
+  const birth = clientExtra?.birth;
   console.log(' birth sub test(birth): ', JSON.stringify(birth));
   console.log();
   //! DB 접근
@@ -121,9 +117,6 @@ export async function birth_sub(clientExtra?: ClientExtra):
     text += '\n';
   });
   console.log('patrtc birth output test(text): ', text);
-  // page 옵션 설정
-  if (page === 0) {
-  }
   const nextQuick: QuickReply = {
     label: '다음 결과',
     action: 'block',
@@ -133,7 +126,7 @@ export async function birth_sub(clientExtra?: ClientExtra):
       birth: birth,
       page: page + 1
     }
-  }
+  };
   const preQuick: QuickReply = {
     label: '이전 결과',
     action: 'block',
@@ -143,7 +136,7 @@ export async function birth_sub(clientExtra?: ClientExtra):
       birth: birth,
       page: page - 1
     }
-  }
+  };
   const newQuery: QuickReply = {
     label: '새로 검색',
     action: 'block',
@@ -151,8 +144,8 @@ export async function birth_sub(clientExtra?: ClientExtra):
     blockId: BlockId.birth_equal,
     extra: {
     }
-  }
-  let quickReplies: QuickReply[] = [];
+  };
+  const quickReplies: QuickReply[] = [];
   if (result.length >= RESULT_SIZE) {
     quickReplies.push(nextQuick);
   }

@@ -54,3 +54,31 @@ TypeError: templates_1.BasicCard is not a function
 2020-07-16 15:05:29.466 [[32minfo[39m] 	Connected to mongodb 
 2020-07-16 16:41:28.007 [[32minfo[39m] 	Running in development mode 
 2020-07-16 16:41:28.173 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 22:36:48.021 [[32minfo[39m] 	Running in development mode 
+2020-07-16 22:36:55.382 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 22:37:45.746 [[33mwarn[39m] 	TypeError: templates_1.BasicCard is not a function
+TypeError: templates_1.BasicCard is not a function
+    at Object.main (/root/toy/remember_me/back/src/services/search.ts:106:19)
+    at main (/root/toy/remember_me/back/src/controllers/search.ts:11:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-16 22:49:05.395 [[32minfo[39m] 	Running in development mode 
+2020-07-16 22:49:05.563 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 22:51:13.336 [[32minfo[39m] 	Running in development mode 
+2020-07-16 22:51:13.399 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 22:52:34.039 [[32minfo[39m] 	Running in development mode 
+2020-07-16 22:52:34.185 [[32minfo[39m] 	Connected to mongodb 
+2020-07-16 22:56:27.462 [[32minfo[39m] 	Running in development mode 
+2020-07-16 22:56:28.709 [[32minfo[39m] 	Connected to mongodb 

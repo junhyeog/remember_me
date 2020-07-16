@@ -1,6 +1,6 @@
 import { Button, BasicCard } from './types';
 export default function BasicCard(title?: String, description?: String, buttons?: Button[]) {
-  const basicCard: BasicCard = {}
+  const basicCard: BasicCard = {};
   if (title) {
     basicCard['title'] = title;
   }

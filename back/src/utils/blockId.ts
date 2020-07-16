@@ -1,5 +1,3 @@
-import { birth } from "services/patrtc";
-
 const BlockId = {
   search_main: '5f0ae4092ed9de0001ebfc65',
   search_add: '5f0ae7303e869f00019d1a52',

@@ -6,75 +6,103 @@ import BlockId from 'utils/blockId';
 import { birth } from './patrtc';
 import PatrtcModel from 'models/patrtc';
 
-//? ReqContext parsing
+const pens: String[] = ['🖊️', '🖋️', '✒️', '✍️', '✏️'];
+const moons: String[] = ['🌛', '🌙'];
+const suns: String[] = ['🌞', '☀️️️️️️'];
+const flwrs: String[] = ['💮', '🏵️'];
+const base_txt = '📌 검색 옵션 📌\n';
+const no_option_txt = '현재 설정된 옵션이 없습니다.😓';
+function randomElement(list: any[]) {
+  return list[Math.floor(Math.random() * list.length)];
+}
+
 function parseReqContexts(reqContexts?: ReqContext[]) {
-  let txt = '현재 설정된 옵션:\n\n'
-  if (reqContexts) {
-    const search_options = reqContexts.find(obj => obj.name === 'search_options');
-    if (search_options) {
-      txt = '현재 설정된 옵션:\n\n'
-      Object.entries(search_options.params).forEach(arr => {
-        if (arr[0] === 'name_kor' && arr[1]) {
-          txt += '성함: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'birth_year' && arr[1]) {
-          txt += '출생 연도: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'birth_month' && arr[1]) {
-          txt += '출생 월: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'birth_day' && arr[1]) {
-          txt += '출생 일: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'death_year' && arr[1]) {
-          txt += '사망 연도: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'death_month' && arr[1]) {
-          txt += '사망 월: ' + arr[1].value + '\n\n'
-        }
-        else if (arr[0] === 'death_day' && arr[1]) {
-          txt += '사망 일: ' + arr[1].value + '\n\n'
-        }
-      })
+  let txt = base_txt;
+  const emojs: String[] = randomElement([moons, suns, flwrs]);
+  if (!reqContexts) return no_option_txt;
+  const search_options = reqContexts.find(obj => obj.name === 'search_options');
+
+  if (search_options) {
+    //* name
+    if (search_options.params.name_kor?.value) {
+      txt += '\n' + randomElement(pens) + '성함: ' + search_options.params.name_kor.value;
+    }
+    //* birth
+    let birth_txt = '';
+    if (search_options.params.birth_year?.value) {
+      birth_txt += search_options.params.birth_year.value + '년 ';
+    }
+    if (search_options.params.birth_month?.value) {
+      birth_txt += search_options.params.birth_month.value + '월 ';
+    }
+    if (search_options.params.birth_day?.value) {
+      birth_txt += search_options.params.birth_day.value + '일 ';
+    }
+    if (birth_txt.length > 0) {
+      txt += '\n' + emojs[0] + '출생 일자: ' + birth_txt;
+    }
+    //* death
+    let death_txt = '';
+    if (search_options.params.death_year?.value) {
+      death_txt += search_options.params.death_year.value + '년 ';
+    }
+    if (search_options.params.death_month?.value) {
+      death_txt += search_options.params.death_month.value + '월 ';
+    }
+    if (search_options.params.death_day?.value) {
+      death_txt += search_options.params.death_day.value + '일 ';
+    }
+    if (death_txt.length > 0) {
+      txt += '\n' + emojs[0] + '사망 일자: ' + death_txt;
     }
   }
-  if (txt === '현재 설정된 옵션:\n\n') {
-    txt = '현재 설정된 옵션이 없습니다.\n';
+  if (txt === base_txt) {
+    txt = no_option_txt;
   }
-  return txt.slice(0, -1);
+  return txt;
 }
 
 function parseContext(context?: Context) {
-  let txt = '현재 설정된 옵션:\n\n'
+  let txt = base_txt;
+  const emojs: String[] = randomElement([moons, suns, flwrs]);
   if (context) {
-    Object.entries(context.params).forEach(arr => {
-      if (arr[0] === 'name_kor' && arr[1]) {
-        txt += '성함: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'birth_year' && arr[1]) {
-        txt += '출생 연도: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'birth_month' && arr[1]) {
-        txt += '출생 월: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'birth_day' && arr[1]) {
-        txt += '출생 일: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'death_year' && arr[1]) {
-        txt += '사망 연도: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'death_month' && arr[1]) {
-        txt += '사망 월: ' + arr[1] + '\n\n'
-      }
-      else if (arr[0] === 'death_day' && arr[1]) {
-        txt += '사망 일: ' + arr[1] + '\n\n'
-      }
-    })
+    //* name
+    if (context.params.name_kor) {
+      txt += '\n' + randomElement(pens) + '성함: ' + context.params.name_kor;
+    }
+    //* birth
+    let birth_txt = '';
+    if (context.params.birth_year) {
+      birth_txt += context.params.birth_year + '년 ';
+    }
+    if (context.params.birth_month) {
+      birth_txt += context.params.birth_month + '월 ';
+    }
+    if (context.params.birth_day) {
+      birth_txt += context.params.birth_day + '일 ';
+    }
+    if (birth_txt.length > 0) {
+      txt += '\n' + emojs[0] + '출생 일자: ' + birth_txt;
+    }
+    //* death
+    let death_txt = '';
+    if (context.params.death_year) {
+      death_txt += context.params.death_year + '년 ';
+    }
+    if (context.params.death_month) {
+      death_txt += context.params.death_month + '월 ';
+    }
+    if (context.params.death_day) {
+      death_txt += context.params.death_day + '일 ';
+    }
+    if (death_txt.length > 0) {
+      txt += '\n' + emojs[0] + '사망 일자: ' + death_txt;
+    }
   }
-  if (txt === '현재 설정된 옵션:\n\n') {
-    txt = '현재 설정된 옵션이 없습니다.\n';
+  if (txt === base_txt) {
+    txt = no_option_txt;
   }
-  return txt.slice(0, -1);
+  return txt;
 }
 
 function reqContextsToContext(reqContexts: ReqContext[]) {
@@ -94,11 +122,10 @@ function reqContextsToContext(reqContexts: ReqContext[]) {
       death_month: search_options.params.death_month?.value ? Number(search_options.params.death_month.value) : undefined,
       death_day: search_options.params.death_day?.value ? Number(search_options.params.death_day.value) : undefined,
     }
-  }
+  };
   return context;
 }
 
-//? services
 /**
  * @description 검색의 초기 화면
  */
@@ -121,9 +148,7 @@ export async function main(): ServiceResult<'SEARCH/MAIN', Object> {
  * @description 검색 옵션 추가 블럭 - main 블럭에서 넘어옴
  */
 export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD', Object> {
-  console.log('service add parmas test (contexts)', parseReqContexts(reqContext));
-  console.log();
-  const output1 = SimpleText(parseReqContexts(reqContext));
+  // const output1 = SimpleText(parseReqContexts(reqContext));
   const output2 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '성함',
@@ -145,7 +170,8 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
     }
   ]);
   return {
-    result: ResBody({ outputs: [output1, output2] }),
+    // result: ResBody({ outputs: parseReqContexts(reqContext) !== no_option_txt ? [output1, output2] : [output2] }),
+    result: ResBody({ outputs: [output2] }),
     success: true
   };
 }
@@ -156,7 +182,7 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
 export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_BIRTH', Object> {
   // console.log('[add_birth] param test(contexts): ', reqContexts);
   // console.log();
-  const output1 = SimpleText(parseReqContexts(reqContexts));
+  // const output1 = SimpleText(parseReqContexts(reqContexts));
   const output2 = BasicCard('출생 정보로 검색하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '출생 연도',
@@ -179,7 +205,7 @@ export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARC
   ]);
   return {
     result: ResBody({
-      outputs: [output1, output2],
+      outputs: [output2],
     }),
     success: true
   };
@@ -191,7 +217,7 @@ export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARC
 export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_DEATH', Object> {
   // console.log('[add_death] param test(contexts): ', reqContexts);
   // console.log();
-  const output1 = SimpleText(parseReqContexts(reqContexts));
+  // const output1 = SimpleText(parseReqContexts(reqContexts));
   const output2 = BasicCard('사망 정보로 검색하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '사망 연도',
@@ -214,7 +240,7 @@ export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARC
   ]);
   return {
     result: ResBody({
-      outputs: [output1, output2],
+      outputs: [output2],
     }),
     success: true
   };
@@ -233,7 +259,7 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
   // console.log('====================================================');
   // console.log();
   //? name_kor 업데이트
-  let newContext = reqContextsToContext(reqContexts)
+  let newContext = reqContextsToContext(reqContexts);
   if (option === 'name_kor' && typeof val === 'string') {
     if (newContext) {
       newContext.params.name_kor = val;
@@ -245,20 +271,20 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
         params: {
           name_kor: val
         }
-      }
+      };
     }
   }
   //? 날짜 옵션 업데이트
   if (option !== 'name_kor') {
     if (newContext) {
-      console.log()
-      console.log('!!! 이전', JSON.stringify(newContext), JSON.stringify(val))
-      console.log()
+      // console.log();
+      // console.log('!!! 이전', JSON.stringify(newContext), JSON.stringify(val));
+      // console.log();
 
       newContext.params[option] = (<SysNumber>val).amount;
 
-      console.log('!!! 이후', JSON.stringify(newContext), JSON.stringify(val))
-      console.log()
+      // console.log('!!! 이후', JSON.stringify(newContext), JSON.stringify(val));
+      // console.log();
 
     }
     else {
@@ -268,12 +294,11 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
         params: {
           [option]: (<SysNumber>val).amount
         }
-      }
+      };
     }
   }
   // output
-  const output1 = SimpleText('변경 후 context\n\n' + JSON.stringify(newContext));
-  const output2 = SimpleText('변경 후 context\n\n' + parseContext(newContext));
+  const output2 = SimpleText(parseContext(newContext));
   const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '옵션 추가/변경하기',
@@ -290,7 +315,7 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
   ]);
   return {
     result: ResBody({
-      outputs: [output1, output2, output3],
+      outputs: [output2, output3],
       contexts: newContext ? [newContext] : undefined
     }),
     success: true
@@ -305,17 +330,17 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
  * @param clientExtra 페이지 정보를 String 형식으로 저장
  */
 export async function result_main(reqContexts: ReqContext[], clientExtra?: ClientExtra): ServiceResult<'SEARCH/RESULT_MAIN', Object> {
-  // console.log();
-  // console.log('[result_main] param test (reqContexts): ', reqContexts);
-  // console.log('[result_main] param test (clientExtra): ', clientExtra);
-  // console.log();
+  console.log();
+  console.log('[result_main] param test (reqContexts[0].params): ', JSON.stringify(reqContexts[0].params));
+  console.log('[result_main] param test (clientExtra): ', JSON.stringify(clientExtra));
+  console.log();
   //* page 설정
   let page = 0;
   if (clientExtra?.page) {
     page = Number(clientExtra.page);
   }
   //? DB 접근
-  const context = reqContextsToContext(reqContexts)
+  const context = reqContextsToContext(reqContexts);
   let query = PatrtcModel.find();
   if (context) {
     if (context.params.name_kor) {
@@ -346,6 +371,8 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     text += p.name_kor;
     text += '\n';
   });
+  console.log('[result_main] text test', text);
+  console.log('=======================');
   const nextQuick: QuickReply = {
     label: '다음 결과',
     action: 'block',
@@ -354,7 +381,7 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     extra: {
       page: page + 1
     }
-  }
+  };
   const preQuick: QuickReply = {
     label: '이전 결과',
     action: 'block',
@@ -363,7 +390,7 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     extra: {
       page: page - 1
     }
-  }
+  };
   const newQuery: QuickReply = {
     label: '새로 검색',
     action: 'block',
@@ -371,8 +398,8 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     blockId: BlockId.search_main,
     extra: {
     }
-  }
-  let quickReplies: QuickReply[] = [];
+  };
+  const quickReplies: QuickReply[] = [];
   if (result.length >= RESULT_SIZE) {
     quickReplies.push(nextQuick);
   }
