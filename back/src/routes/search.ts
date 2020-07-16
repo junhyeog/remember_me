@@ -10,11 +10,6 @@ router.post('/add', Controller.add);
 router.post('/add/birth', Controller.add_birth);
 router.post('/add/death', Controller.add_death);
 router.post('/add/option', Controller.add_option);
-router.post('/result/main', Controller.result_main);
-// router.post('/result/sub', Controller.result_sub);
-// router.post('/add/name_kor', Controller.add_name_kor);
-// router.post('/add/birth_year', Controller.add_birth_year);
-// router.post('/add/birth_month', Controller.add_birth_month);
-// router.post('/add/birth_day', Controller.add_birth_day);
+router.post('/result/main', Controller.result_main);;
 
 export default router;

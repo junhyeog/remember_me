@@ -95,18 +95,3 @@ export async function result_main(req: Request, res: Response, next: NextFunctio
     next(err);
   }
 }
-
-// /**
-//  * @description Controller for `POST /search/result/sub
-//  */
-// export async function result_sub(req: Request, res: Response, next: NextFunction) {
-//   try {
-//     const ret = await SearchService.result_sub(req.body.contexts, req.body.action?.clientExtra);
-//     if (ret.success && ret.result) {
-//       return res.status(200).json(ret.result);
-//     }
-//     res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
-//   } catch (err) {
-//     next(err);
-//   }
-// }

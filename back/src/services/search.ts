@@ -154,8 +154,8 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
  * @description 검색 옵션에 추가할 birth 옵션 선택 - add 블럭에서 넘어옴
  */
 export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_BIRTH', Object> {
-  console.log('[add_birth] param test(contexts): ', reqContexts);
-  console.log();
+  // console.log('[add_birth] param test(contexts): ', reqContexts);
+  // console.log();
   const output1 = SimpleText(parseReqContexts(reqContexts));
   const output2 = BasicCard('출생 정보로 검색하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -189,8 +189,8 @@ export async function add_birth(reqContexts: ReqContext[]): ServiceResult<'SEARC
  * @description 검색 옵션에 추가할 death 옵션 선택 - add 블럭에서 넘어옴
  */
 export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_DEATH', Object> {
-  console.log('[add_death] param test(contexts): ', reqContexts);
-  console.log();
+  // console.log('[add_death] param test(contexts): ', reqContexts);
+  // console.log();
   const output1 = SimpleText(parseReqContexts(reqContexts));
   const output2 = BasicCard('사망 정보로 검색하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -224,14 +224,14 @@ export async function add_death(reqContexts: ReqContext[]): ServiceResult<'SEARC
  * @description 검색 옵션 추가 - add, add_birth, add_death 블럭에서 넘어옴
  */
 export async function add_option(option: OptionName, val: SysNumber | String, reqContexts: ReqContext[]): ServiceResult<'SEARCH/ADD_OPTION', Object> {
-  console.log();
-  console.log('====================================================');
-  console.log('[add_option] param test (option): ', option);
-  console.log('[add_option] param test (val): ', val);
-  console.log('[add_option] param test (reqContexts): /n', reqContexts);
-  console.log('[add_option] parse test (newContext): /n', JSON.stringify(reqContextsToContext(reqContexts)));
-  console.log('====================================================');
-  console.log();
+  // console.log();
+  // console.log('====================================================');
+  // console.log('[add_option] param test (option): ', option);
+  // console.log('[add_option] param test (val): ', val);
+  // console.log('[add_option] param test (reqContexts): /n', reqContexts);
+  // console.log('[add_option] parse test (newContext): /n', JSON.stringify(reqContextsToContext(reqContexts)));
+  // console.log('====================================================');
+  // console.log();
   //? name_kor 업데이트
   let newContext = reqContextsToContext(reqContexts)
   if (option === 'name_kor' && typeof val === 'string') {
@@ -305,11 +305,10 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
  * @param clientExtra 페이지 정보를 String 형식으로 저장
  */
 export async function result_main(reqContexts: ReqContext[], clientExtra?: ClientExtra): ServiceResult<'SEARCH/RESULT_MAIN', Object> {
-  console.log();
-  console.log('[result_main] param test (reqContexts): ', reqContexts);
-  console.log();
-  console.log('[result_main] param test (clientExtra): ', clientExtra);
-  console.log();
+  // console.log();
+  // console.log('[result_main] param test (reqContexts): ', reqContexts);
+  // console.log('[result_main] param test (clientExtra): ', clientExtra);
+  // console.log();
   //* page 설정
   let page = 0;
   if (clientExtra?.page) {
@@ -386,87 +385,3 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     success: true
   };
 }
-
-
-// /**
-//  * @description 이전 결과 다음 결과를 위한 블럭
-//  * @param contexts 검색 옵션
-//  * @param clientExtra 페이지 정보를 String 형식으로 저장
-//  */
-// export async function result_sub(reqContexts: ReqContext[], clientExtra?: ClientExtra): ServiceResult<'SEARCH/RESULT_SUB', Object> {
-//   //* page 설정
-//   let page = 0;
-//   if (clientExtra?.page) {
-//     page = Number(clientExtra.page);
-//   }
-//   //? DB 접근
-//   const context = reqContextsToContext(reqContexts)
-//   let query = PatrtcModel.find();
-//   if (context) {
-//     if (context.params.name_kor) {
-//       query = query.find({ name_kor: context.params.name_kor });
-//     }
-//     if (context.params.birth_year) {
-//       query = query.find({ birth_year: context.params.birth_year });
-//     }
-//     if (context.params.birth_month) {
-//       query = query.find({ birth_month: context.params.birth_month });
-//     }
-//     if (context.params.birth_day) {
-//       query = query.find({ birth_day: context.params.birth_day });
-//     }
-//     if (context.params.death_year) {
-//       query = query.find({ death_year: context.params.death_year });
-//     }
-//     if (context.params.death_month) {
-//       query = query.find({ death_month: context.params.death_month });
-//     }
-//     if (context.params.death_day) {
-//       query = query.find({ death_day: context.params.death_day });
-//     }
-//   }
-//   const result = await query.sort('name_kor').skip(page * RESULT_SIZE).limit(RESULT_SIZE);
-//   let text = '후보:\n\n';
-//   result.forEach((p) => {
-//     text += p.name_kor;
-//     text += '\n';
-//   });
-//   const nextQuick: QuickReply = {
-//     label: '다음 결과',
-//     action: 'block',
-//     messageText: '다음 결과 보기',
-//     blockId: BlockId.search_result_sub,
-//     extra: {
-//       page: page + 1
-//     }
-//   }
-//   const preQuick: QuickReply = {
-//     label: '이전 결과',
-//     action: 'block',
-//     messageText: '이전 결과 보기',
-//     blockId: BlockId.search_result_sub,
-//     extra: {
-//       page: page - 1
-//     }
-//   }
-//   const newQuery: QuickReply = {
-//     label: '새로 검색',
-//     action: 'block',
-//     messageText: '새로 검색',
-//     blockId: BlockId.search_main,
-//     extra: {
-//     }
-//   }
-//   let quickReplies: QuickReply[] = [];
-//   if (result.length >= RESULT_SIZE) {
-//     quickReplies.push(nextQuick);
-//   }
-//   if (page > 0) {
-//     quickReplies.push(preQuick);
-//   }
-//   quickReplies.push(newQuery);
-//   return {
-//     result: ResBody({ outputs: [SimpleText(text)], quickReplies }),
-//     success: true
-//   };
-// }
