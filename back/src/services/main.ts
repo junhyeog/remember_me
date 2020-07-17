@@ -9,7 +9,7 @@ import { resultsToOutputs } from 'utils/result';
 
 const quickReplies: QuickReply[] = [
   {
-    label: '오늘의 호국영령',
+    label: '오늘의 호국영령📅',
     action: 'block',
     messageText: '오늘의 호국영령',
     blockId: BlockId.main_today,
@@ -24,7 +24,7 @@ const quickReplies: QuickReply[] = [
     label: '즐겨찾기⭐',
     action: 'block',
     messageText: '즐겨찾기',
-    blockId: BlockId.birth_equal_sub, // TODO
+    blockId: BlockId.user_favorite_get,
   },
   // { //TODO
   //   label: '내 정보🌱',
@@ -33,7 +33,7 @@ const quickReplies: QuickReply[] = [
   //   blockId: BlockId.birth_equal_sub, // TODO
   // },
   {
-    label: '이용 안내📰',
+    label: '이용 안내📋',
     action: 'block',
     messageText: '이용 안내',
     blockId: BlockId.main_info,
@@ -103,9 +103,7 @@ export async function today(clientExtra?: ClientExtra): ServiceResult<'MAIN/TODA
   if (result.length >= RESULT_SIZE) {
     quickReplies.push(nextQuick);
   }
-  else {
-    quickReplies.push(homeQuick);
-  }
+  quickReplies.push(homeQuick);
   return {
     result: ResBody({ outputs: resultsToOutputs(page, result), quickReplies }),
     success: true

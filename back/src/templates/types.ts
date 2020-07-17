@@ -4,12 +4,13 @@ export type Button = {
   messageText?: String; // 블록 연결시 사용자의 발화로 노출될 문구
   blockId?: String; // 호출할 블록의 id
   webLinkUrl?: String;
+  extra?: any;
 }
 
 export type QuickReply = {
   label: String; // 노출되는 문구
   action: 'block' | 'message' // 클릭시 수행될 작업
-  messageText: String; //클릭시 사용자의 발화로 노출될 문구
+  messageText?: String; //클릭시 사용자의 발화로 노출될 문구
   blockId: String; // 호출할 블록의 id
   extra?: any;
 }

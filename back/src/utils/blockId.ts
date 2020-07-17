@@ -20,6 +20,11 @@ const BlockId = {
   main_home: '5f06215b3e869f00019d09c6',
   main_today: '5f0947da3e869f00019d179b',
   main_info: '5f110da606d5d4000113c4da',
+  //? user
+  user_favorite_get: '5f1158bc40495a0001209a59',
+  user_favorite_add: '5f11589b796f080001e1f4f5',
+  user_favorite_del: '5f1158b1ba7adc0001d4558d',
+
   //
   birth_equal: '5f036e5c2ed9de0001ebdce8',
   birth_equal_sub: '5f0da212571b05000135b5cf'

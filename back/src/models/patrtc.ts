@@ -3,7 +3,7 @@ import mongo, { Schema } from 'mongoose';
 
 const schema = new mongo.Schema<Patrtc>(
   {
-    _id: { required: true, type: Schema.Types.ObjectId },
+    // _id: { required: true, type: Schema.Types.ObjectId },
     group: { enum: ['korwar'], type: String },
     name_kor: { required: true, type: String },
     name_chi: { type: String },

@@ -2,7 +2,7 @@ import { Patrtc } from 'utils/types';
 import { SimpleText, CarouselCard } from 'templates';
 import { Context, ReqContext } from 'templates/types';
 import { Document } from 'mongoose';
-import PatrtcCard from 'templates/patrtcCard';
+import PatrtcCard, {PatrtcCard2} from 'templates/patrtcCard';
 
 const pens: String[] = ['🖊️', '🖋️', '✒️', '✍️', '✏️'];
 const dateEmj1: String[] = ['☀️', '🌙'];
@@ -152,4 +152,59 @@ export function resultsToOutputs(page: Number, results: (Patrtc & Document)[]) {
   return [
     CarouselCard(results.map((result) => PatrtcCard(resultToText(result), result._id)))
   ];
+}
+
+export function resultsToOutputs2(page: Number, results: (Patrtc & Document)[]) {
+  //? 결과가 없을 경우
+  if (results.length < 1) {
+    if (page === 0) return [SimpleText('검색 결과가 존재하지 않습니다.' + randomElement(sads))];
+    else return [SimpleText('마지막 페이지입니다.' + randomElement(sads))];
+  }
+  //? 결과가 있을 경우
+  return [
+    CarouselCard(results.map((result) => PatrtcCard2(resultToText(result), result._id)))
+  ];
+}
+
+export function parseRow(row?: Patrtc) {
+  let txt = base_txt;
+  const emjs: String[] = randomElement([dateEmj1, dateEmj2, dateEmj3]);
+  if (row) {
+    //* name
+    if (row.name_kor) {
+      txt += '\n\n' + randomElement(pens) + ' 성함: ' + row.name_kor;
+    }
+    //* birth
+    let birth_txt = '';
+    if (row.birth_year) {
+      birth_txt += row.birth_year + '년 ';
+    }
+    if (row.birth_month) {
+      birth_txt += row.birth_month + '월 ';
+    }
+    if (row.birth_day) {
+      birth_txt += row.birth_day + '일 ';
+    }
+    if (birth_txt.length > 0) {
+      txt += '\n\n' + emjs[0] + ' 출생 일자: ' + birth_txt;
+    }
+    //* death
+    let death_txt = '';
+    if (row.death_year) {
+      death_txt += row.death_year + '년 ';
+    }
+    if (row.death_month) {
+      death_txt += row.death_month + '월 ';
+    }
+    if (row.death_day) {
+      death_txt += row.death_day + '일 ';
+    }
+    if (death_txt.length > 0) {
+      txt += '\n\n' + emjs[1] + ' 사망 일자: ' + death_txt;
+    }
+  }
+  if (txt === base_txt) {
+    txt = no_option_txt;
+  }
+  return txt;
 }

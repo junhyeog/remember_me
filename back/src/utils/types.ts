@@ -1,4 +1,5 @@
 import mongo, { Schema } from 'mongoose';
+import { ObjectId } from 'bson';
 
 export type ServiceResult<T = undefined, R = undefined> = Promise<{
   success: boolean;
@@ -18,7 +19,6 @@ export interface Patrtc {
   death_month: Number;
   death_day: Number;
   place: String;
-  serial: String;
   kind: String;
   unit: String;
   rank: String;
@@ -27,16 +27,9 @@ export interface Patrtc {
 }
 
 export interface User {
-  _id: Schema.Types.ObjectId;
-  name: String;
-  birth_year: Number;
-  birth_month: Number;
-  birth_day: Number;
-  place: String;
-  kind: String;
-  unit: String;
-  rank: String;
-  favorite: Schema.Types.ObjectId[];
+  _id: ObjectId;
+  botUserKey: String;
+  favorite: ObjectId[];
 }
 
 export type PName = {
