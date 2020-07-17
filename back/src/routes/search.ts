@@ -11,5 +11,6 @@ router.post('/add/birth', Controller.add_birth);
 router.post('/add/death', Controller.add_death);
 router.post('/add/option', Controller.add_option);
 router.post('/result/main', Controller.result_main);
+router.get('/result/detail/:_id', Controller.result_detailById);
 
 export default router;

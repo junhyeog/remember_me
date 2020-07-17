@@ -2,6 +2,7 @@ import * as SearchService from 'services/search';
 import { Request, Response, NextFunction } from 'express';
 import { SimpleText, ResBody } from 'templates';
 import { OptionName } from 'utils/types';
+import { Schema } from 'mongoose';
 
 /**
  * @description Controller for `POST /search/main
@@ -12,7 +13,7 @@ export async function main(req: Request, res: Response, next: NextFunction) {
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
   } catch (err) {
     next(err);
   }
@@ -27,7 +28,7 @@ export async function add(req: Request, res: Response, next: NextFunction) {
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
   } catch (err) {
     next(err);
   }
@@ -42,7 +43,7 @@ export async function add_birth(req: Request, res: Response, next: NextFunction)
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
   } catch (err) {
     next(err);
   }
@@ -57,7 +58,7 @@ export async function add_death(req: Request, res: Response, next: NextFunction)
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
   } catch (err) {
     next(err);
   }
@@ -73,13 +74,11 @@ export async function add_option(req: Request, res: Response, next: NextFunction
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
   } catch (err) {
     next(err);
   }
 }
-
-//! result controllers
 
 /**
  * @description Controller for `POST /search/result/main
@@ -90,7 +89,22 @@ export async function result_main(req: Request, res: Response, next: NextFunctio
     if (ret.success && ret.result) {
       return res.status(200).json(ret.result);
     }
-    res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+  } catch (err) {
+    next(err);
+  }
+}
+
+/**
+ * @description Controller for `POST /search/detail/:_id
+ */
+export async function result_detailById(req: Request, res: Response, next: NextFunction) {
+  try {
+    const ret = await SearchService.result_ById(req.params._id);
+    if (ret.success && ret.result) {
+      return res.status(200).render('detail', ret.result);
+    }
+    return res.status(404).render('404');
   } catch (err) {
     next(err);
   }

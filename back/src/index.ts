@@ -41,6 +41,8 @@ export default async function createApp(isDev = false) {
   // Set configs
   await setup(isDev);
   const app = express();
+  app.set('views', './src/views');
+  app.set('view engine', 'ejs');
   app.use(helmet());
   // app.use(morgan('dev'));
 

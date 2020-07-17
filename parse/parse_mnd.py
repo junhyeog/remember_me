@@ -82,9 +82,9 @@ def parse_r(r):
                 data = data.replace('원주면', '원주면 ')
                 data = data.replace('강우너도', '강원도')
                 data = ' '.join(data.rstrip().lstrip().split())
-                d['place'] = data.rstrip().lstrip()
-                if d['place'][-1] == '에' or d['place'][-1] == '서' or '현재는' in d['place']:
+                if data[-1] == '에' or data[-1] == '서' or '현재는' in data or data[0]=='라':
                     return False
+                d['place'] = data
             except:
                 return False
                 # print(data)

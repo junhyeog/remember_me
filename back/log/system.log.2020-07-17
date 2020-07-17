@@ -14,3 +14,188 @@
 2020-07-17 03:08:20.130 [[32minfo[39m] 	Connected to mongodb 
 2020-07-17 03:14:23.559 [[32minfo[39m] 	Running in development mode 
 2020-07-17 03:14:24.898 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:10:46.276 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:10:47.996 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:12:56.495 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:12:56.580 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:14:40.444 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:14:40.501 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:16:42.474 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:16:48.608 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:21:52.115 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:21:52.991 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:24:14.692 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:24:14.974 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:27:07.219 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:27:07.447 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:28:51.228 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:28:51.320 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:34:09.332 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:34:09.436 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:36:29.908 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:36:29.981 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:39:09.696 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:39:09.754 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 07:43:42.716 [[32minfo[39m] 	Running in development mode 
+2020-07-17 07:43:42.838 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:05:25.608 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:05:25.669 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:12:58.128 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:12:58.228 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:13:33.007 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:13:33.120 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:34:54.106 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:34:54.623 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:38:12.152 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:38:12.226 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:46:06.988 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:46:07.051 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:46:39.451 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 08:49:19.256 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:49:21.246 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 08:49:30.174 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 08:49:32.118 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 08:52:06.622 [[32minfo[39m] 	Running in development mode 
+2020-07-17 08:52:07.394 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:03:40.265 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:03:51.263 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:04:56.893 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:04:58.444 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:04:59.294 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:06:39.932 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:06:40.813 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:06:46.415 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:06:57.485 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:07:09.955 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:11:03.508 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:11:03.628 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:11:10.907 [[33mwarn[39m] 	TypeError: patrtc_1.default.find is not a function
+TypeError: patrtc_1.default.find is not a function
+    at Object.result_ById (/root/toy/remember_me/back/src/services/search.ts:463:36)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:103:37)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/root/toy/remember_me/back/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:281:22
+    at param (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:354:14)
+    at param (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:410:3)
+    at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:174:3)
+    at router (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/root/toy/remember_me/back/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:317:13)
+    at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7 
+2020-07-17 09:14:28.064 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:14:28.908 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:14:31.048 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:16:56.223 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:16:56.460 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:16:59.186 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:17:00.404 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:17:03.596 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja79s8yk" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:17:12.875 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja7" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja7" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:20:50.602 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:20:50.676 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:20:55.545 [[33mwarn[39m] 	CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja7" at path "_id" for model "Patrtc"
+CastError: Cast to ObjectId failed for value "56dfjksdhf874tjbnsdkfja7" at path "_id" for model "Patrtc"
+    at model.Query.exec (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4351:21)
+    at model.Query.Query.then (/root/toy/remember_me/back/node_modules/mongoose/lib/query.js:4443:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:28:31.723 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:28:32.208 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:28:59.719 [[33mwarn[39m] 	Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:108:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:33:36.310 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:33:36.489 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:33:49.914 [[33mwarn[39m] 	Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:108:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:33:51.851 [[33mwarn[39m] 	Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+Error: Failed to lookup view "404" in views directory "/root/toy/remember_me/back/views"
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:108:28)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 09:34:56.441 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:34:57.761 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:36:14.368 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:36:14.425 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:37:56.908 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:37:58.474 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:53:45.391 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:53:45.451 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 09:59:32.394 [[32minfo[39m] 	Running in development mode 
+2020-07-17 09:59:33.092 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 10:01:28.552 [[32minfo[39m] 	Running in development mode 
+2020-07-17 10:01:28.626 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 10:02:12.616 [[32minfo[39m] 	Running in development mode 
+2020-07-17 10:02:12.700 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 10:02:57.163 [[32minfo[39m] 	Running in development mode 
+2020-07-17 10:02:57.229 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 10:22:54.083 [[32minfo[39m] 	Running in development mode 
+2020-07-17 10:22:54.399 [[32minfo[39m] 	Connected to mongodb 

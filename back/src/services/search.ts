@@ -1,15 +1,19 @@
 import { ServiceResult, SysNumber, Patrtc, PName, OptionName } from 'utils/types';
 import { RESULT_SIZE } from 'utils/constant';
-import { ResBody, BasicCard, SimpleText } from 'templates';
+import { ResBody, BasicCard, SimpleText, CarouselCard } from 'templates';
 import { Context, QuickReply, ReqContext, ClientExtra } from 'templates/types';
 import BlockId from 'utils/blockId';
 import { birth } from './patrtc';
 import PatrtcModel from 'models/patrtc';
+import { Document, Schema } from 'mongoose';
+import PatrtcCard from 'templates/patrtcCard';
 
 const pens: String[] = ['🖊️', '🖋️', '✒️', '✍️', '✏️'];
-const moons: String[] = ['🌛', '🌙'];
-const suns: String[] = ['🌞', '☀️️️️️️'];
-const flwrs: String[] = ['💮', '🏵️'];
+const dateEmj1: String[] = ['☀️', '🌙'];
+const dateEmj2: String[] = ['🌞', '🌛️️️️️'];
+const dateEmj3: String[] = ['💮', '🏵️'];
+const sads: String[] = ['😥', '😓', '😭', '😢', '✏️'];
+const units: String[] = ['⛺', '🏕️', '🎪'];
 const base_txt = '📌 검색 옵션 📌\n';
 const no_option_txt = '현재 설정된 옵션이 없습니다.😓';
 function randomElement(list: any[]) {
@@ -18,7 +22,7 @@ function randomElement(list: any[]) {
 
 function parseReqContexts(reqContexts?: ReqContext[]) {
   let txt = base_txt;
-  const emojs: String[] = randomElement([moons, suns, flwrs]);
+  const emjs: String[] = randomElement([dateEmj1, dateEmj2, dateEmj3]);
   if (!reqContexts) return no_option_txt;
   const search_options = reqContexts.find(obj => obj.name === 'search_options');
 
@@ -39,7 +43,7 @@ function parseReqContexts(reqContexts?: ReqContext[]) {
       birth_txt += search_options.params.birth_day.value + '일 ';
     }
     if (birth_txt.length > 0) {
-      txt += '\n' + emojs[0] + '출생 일자: ' + birth_txt;
+      txt += '\n' + emjs[0] + '출생 일자: ' + birth_txt;
     }
     //* death
     let death_txt = '';
@@ -53,7 +57,7 @@ function parseReqContexts(reqContexts?: ReqContext[]) {
       death_txt += search_options.params.death_day.value + '일 ';
     }
     if (death_txt.length > 0) {
-      txt += '\n' + emojs[0] + '사망 일자: ' + death_txt;
+      txt += '\n' + emjs[1] + '사망 일자: ' + death_txt;
     }
   }
   if (txt === base_txt) {
@@ -64,7 +68,7 @@ function parseReqContexts(reqContexts?: ReqContext[]) {
 
 function parseContext(context?: Context) {
   let txt = base_txt;
-  const emojs: String[] = randomElement([moons, suns, flwrs]);
+  const emjs: String[] = randomElement([dateEmj1, dateEmj2, dateEmj3]);
   if (context) {
     //* name
     if (context.params.name_kor) {
@@ -82,7 +86,7 @@ function parseContext(context?: Context) {
       birth_txt += context.params.birth_day + '일 ';
     }
     if (birth_txt.length > 0) {
-      txt += '\n' + emojs[0] + '출생 일자: ' + birth_txt;
+      txt += '\n' + emjs[0] + '출생 일자: ' + birth_txt;
     }
     //* death
     let death_txt = '';
@@ -96,7 +100,7 @@ function parseContext(context?: Context) {
       death_txt += context.params.death_day + '일 ';
     }
     if (death_txt.length > 0) {
-      txt += '\n' + emojs[0] + '사망 일자: ' + death_txt;
+      txt += '\n' + emjs[1] + '사망 일자: ' + death_txt;
     }
   }
   if (txt === base_txt) {
@@ -323,6 +327,33 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
 }
 
 //! Result Services
+function resultToText(result: Patrtc & Document) {
+  let txt = '';
+  //? name, rank
+  const name_txt = randomElement(pens) + ' ' + result.name_kor + '(' + result.name_chi + ') ' + result.rank;
+  const emjs: String[] = randomElement([dateEmj1, dateEmj2, dateEmj3]);
+  const date_txt = emjs[1] + ' ' + result.birth_year + '.' + result.birth_month + '.' + result.birth_day + '. - ' + result.death_year + '.' + result.death_month + '.' + result.death_day + '.';
+  const place_txt = '🗺 ' + result.place;
+  const unit_txt = randomElement(units) + ' ' + result.kind + ' ' + result.unit;
+  txt += name_txt + '\n';
+  txt += date_txt + '\n';
+  txt += place_txt + '\n';
+  txt += unit_txt;
+  return txt;
+}
+
+function resultsToOutputs(page: Number, results: (Patrtc & Document)[]) {
+  //? 결과가 없을 경우
+  if (results.length < 1) {
+    if (page === 0) return [SimpleText('검색 결과가 존재하지 않습니다.' + randomElement(sads))];
+    else return [SimpleText('마지막 페이지입니다.' + randomElement(sads))];
+  }
+  //? 결과가 있을 경우
+  return [
+    CarouselCard(results.map((result) => PatrtcCard(resultToText(result), result._id)))
+  ];
+}
+
 
 /**
  * @description 검색 결과 반환
@@ -333,12 +364,13 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
   console.log();
   console.log('[result_main] param test (reqContexts[0].params): ', JSON.stringify(reqContexts[0].params));
   console.log('[result_main] param test (clientExtra): ', JSON.stringify(clientExtra));
-  console.log();
+  // console.log();
   //* page 설정
   let page = 0;
   if (clientExtra?.page) {
     page = Number(clientExtra.page);
   }
+  console.log('[result_main] page test (clientExtra): ', page);
   //? DB 접근
   const context = reqContextsToContext(reqContexts);
   let query = PatrtcModel.find();
@@ -366,12 +398,8 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     }
   }
   const result = await query.sort('name_kor').skip(page * RESULT_SIZE).limit(RESULT_SIZE);
-  let text = '후보:\n\n';
-  result.forEach((p) => {
-    text += p.name_kor;
-    text += '\n';
-  });
-  console.log('[result_main] text test', text);
+
+  // console.log('[result_main] output test', JSON.stringify(resultsToOutputs(page, result)));
   console.log('=======================');
   const nextQuick: QuickReply = {
     label: '다음 결과',
@@ -400,15 +428,46 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     }
   };
   const quickReplies: QuickReply[] = [];
-  if (result.length >= RESULT_SIZE) {
-    quickReplies.push(nextQuick);
-  }
   if (page > 0) {
     quickReplies.push(preQuick);
   }
+  if (result.length >= RESULT_SIZE) {
+    quickReplies.push(nextQuick);
+  }
   quickReplies.push(newQuery);
   return {
-    result: ResBody({ outputs: [SimpleText(text)], quickReplies }),
+    result: ResBody({ outputs: resultsToOutputs(page, result), quickReplies }),
     success: true
   };
+}
+
+/**
+ * @description id로 patrtc 검색 후 detail 정보 제공
+ * @param _id patrtc id
+ */
+export async function result_ById(_id: String): ServiceResult<'SEARCH/DETAILBYID', Object> {
+  console.log();
+  console.log('[result_ById] param test (_id): ', _id);
+  console.log();
+  try {
+    const result = await PatrtcModel.find({ _id });
+    if (result.length !== 1) {
+      return {
+        reason: 'SEARCH/DETAILBYID',
+        success: false
+      };
+    }
+    return {
+      result: result[0],
+      success: true
+    };
+  }
+  catch{
+    return {
+      reason: 'SEARCH/DETAILBYID',
+      success: false
+    };
+
+
+  }
 }

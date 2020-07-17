@@ -1,1 +1,1 @@
-export const RESULT_SIZE = 5;
+export const RESULT_SIZE = 10;
