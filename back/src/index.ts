@@ -43,6 +43,7 @@ export default async function createApp(isDev = false) {
   const app = express();
   app.set('views', './src/views');
   app.set('view engine', 'ejs');
+  app.use('/img', express.static(__dirname + '/public'));
   app.use(helmet());
   // app.use(morgan('dev'));
 

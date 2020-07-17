@@ -16,6 +16,11 @@ const BlockId = {
   search_result_main: '5f0efe26dc3981000163bdb7',
   search_result_sub: '5f0f021fd3e2ed0001228a11',
   //
+  //? main
+  main_home: '5f06215b3e869f00019d09c6',
+  main_today: '5f0947da3e869f00019d179b',
+  main_info: '5f110da606d5d4000113c4da',
+  //
   birth_equal: '5f036e5c2ed9de0001ebdce8',
   birth_equal_sub: '5f0da212571b05000135b5cf'
 };

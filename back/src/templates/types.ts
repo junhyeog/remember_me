@@ -14,9 +14,14 @@ export type QuickReply = {
   extra?: any;
 }
 
+export interface Thumbnail {
+  imageUrl: String
+}
+
 export type BasicCard = {
   title?: String; // 
   description?: String; // 
+  thumbnail?: Thumbnail;
   buttons?: Button[];
 }
 
@@ -68,6 +73,7 @@ export interface ClientExtra extends Object {
 export interface CarouselHeader {
   title?: String;
   description?: String;
+  thumbnail?: Thumbnail;
 }
 
 export interface Carousel {
