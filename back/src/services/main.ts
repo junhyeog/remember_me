@@ -63,13 +63,13 @@ export async function today(clientExtra?: ClientExtra): ServiceResult<'MAIN/TODA
   if (clientExtra?.page) {
     page = Number(clientExtra.page);
   }
-  console.log('[result_main] page test (clientExtra): ', page);
+  console.log('[today] page test (page): ', page);
   //? 오늘 날짜
   const today = new Date();
   //? DB 접근
   const query = PatrtcModel.find({ birth_month: today.getMonth() + 1, birth_day: today.getDate() });
   const result = await query.sort('name_kor').skip(page * RESULT_SIZE).limit(RESULT_SIZE);
-  // console.log('[result_main] output test', JSON.stringify(resultsToOutputs(page, result)));
+  // console.log('[today] output test', JSON.stringify(resultsToOutputs(page, result)));
   console.log('=======================');
   //* QuickReplies
   const nextQuick: QuickReply = {

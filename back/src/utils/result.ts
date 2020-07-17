@@ -10,8 +10,8 @@ const dateEmj2: String[] = ['🌞', '🌛️️️️️'];
 const dateEmj3: String[] = ['💮', '🏵️'];
 const sads: String[] = ['😥', '😓', '😭', '😢', '✏️'];
 const units: String[] = ['⛺', '🏕️', '🎪'];
-const base_txt = '📌 검색 옵션 📌\n';
-const no_option_txt = '현재 설정된 옵션이 없습니다.😓';
+export const base_txt = '📌 검색 옵션 📌';
+export const no_option_txt = '현재 설정된 옵션이 없습니다.😓';
 
 function randomElement(list: any[]) {
   return list[Math.floor(Math.random() * list.length)];
@@ -47,7 +47,7 @@ export function parseReqContexts(reqContexts?: ReqContext[]) {
   if (search_options) {
     //* name
     if (search_options.params.name_kor?.value) {
-      txt += '\n' + randomElement(pens) + '성함: ' + search_options.params.name_kor.value;
+      txt += '\n\n' + randomElement(pens) + ' 성함: ' + search_options.params.name_kor.value;
     }
     //* birth
     let birth_txt = '';
@@ -61,7 +61,7 @@ export function parseReqContexts(reqContexts?: ReqContext[]) {
       birth_txt += search_options.params.birth_day.value + '일 ';
     }
     if (birth_txt.length > 0) {
-      txt += '\n' + emjs[0] + '출생 일자: ' + birth_txt;
+      txt += '\n\n' + emjs[0] + ' 출생 일자: ' + birth_txt;
     }
     //* death
     let death_txt = '';
@@ -75,7 +75,7 @@ export function parseReqContexts(reqContexts?: ReqContext[]) {
       death_txt += search_options.params.death_day.value + '일 ';
     }
     if (death_txt.length > 0) {
-      txt += '\n' + emjs[1] + '사망 일자: ' + death_txt;
+      txt += '\n\n' + emjs[1] + ' 사망 일자: ' + death_txt;
     }
   }
   if (txt === base_txt) {
@@ -90,7 +90,7 @@ export function parseContext(context?: Context) {
   if (context) {
     //* name
     if (context.params.name_kor) {
-      txt += '\n' + randomElement(pens) + '성함: ' + context.params.name_kor;
+      txt += '\n\n' + randomElement(pens) + ' 성함: ' + context.params.name_kor;
     }
     //* birth
     let birth_txt = '';
@@ -104,7 +104,7 @@ export function parseContext(context?: Context) {
       birth_txt += context.params.birth_day + '일 ';
     }
     if (birth_txt.length > 0) {
-      txt += '\n' + emjs[0] + '출생 일자: ' + birth_txt;
+      txt += '\n\n' + emjs[0] + ' 출생 일자: ' + birth_txt;
     }
     //* death
     let death_txt = '';
@@ -118,7 +118,7 @@ export function parseContext(context?: Context) {
       death_txt += context.params.death_day + '일 ';
     }
     if (death_txt.length > 0) {
-      txt += '\n' + emjs[1] + '사망 일자: ' + death_txt;
+      txt += '\n\n' + emjs[1] + ' 사망 일자: ' + death_txt;
     }
   }
   if (txt === base_txt) {
@@ -135,9 +135,9 @@ export function resultToText(result: Patrtc & Document) {
   const date_txt = emjs[1] + ' ' + result.birth_year + '.' + result.birth_month + '.' + result.birth_day + '. - ' + result.death_year + '.' + result.death_month + '.' + result.death_day + '.';
   const place_txt = '🗺 ' + result.place;
   const unit_txt = randomElement(units) + ' ' + result.kind + ' ' + result.unit;
-  txt += name_txt + '\n';
-  txt += date_txt + '\n';
-  txt += place_txt + '\n';
+  txt += name_txt + '\n\n';
+  txt += date_txt + '\n\n';
+  txt += place_txt + '\n\n';
   txt += unit_txt;
   return txt;
 }

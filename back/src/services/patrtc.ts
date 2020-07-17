@@ -55,9 +55,9 @@ export async function birth(birth: Date, clientExtra?: ClientExtra): ServiceResu
     }
   };
   const newQuery: QuickReply = {
-    label: '새로 검색',
+    label: '새로운 검색',
     action: 'block',
-    messageText: '새로 검색',
+    messageText: '새로운 검색',
     blockId: BlockId.birth_equal,
     extra: {
     }
@@ -138,9 +138,9 @@ export async function birth_sub(clientExtra?: ClientExtra):
     }
   };
   const newQuery: QuickReply = {
-    label: '새로 검색',
+    label: '새로운 검색',
     action: 'block',
-    messageText: '새로 검색',
+    messageText: '새로운 검색',
     blockId: BlockId.birth_equal,
     extra: {
     }

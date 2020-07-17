@@ -7,7 +7,79 @@ import { birth } from './patrtc';
 import PatrtcModel from 'models/patrtc';
 import { Document, Schema } from 'mongoose';
 import PatrtcCard from 'templates/patrtcCard';
-import { reqContextsToContext, parseContext, resultsToOutputs } from 'utils/result';
+import { reqContextsToContext, parseContext, resultsToOutputs, no_option_txt, base_txt } from 'utils/result';
+
+function optionCard(context?: Context) {
+  // return BasicCard(parseContext(context), undefined, [
+  //   {
+  //     label: '검색하기',
+  //     action: 'block',
+  //     messageText: '검색',
+  //     blockId: BlockId.search_result_main
+  //   }
+  // ]);
+  const option_txt = parseContext(context);
+  if (option_txt === no_option_txt) {
+    return BasicCard(parseContext(context));
+  }
+  return BasicCard(base_txt, option_txt.slice(base_txt.length));
+}
+
+const nameCard = BasicCard('성함 정보 추가/변경하기', '성함 정보를 추가/변경하시려면 [성함]을, 현재의 검색 옵션으로 검색하시려면 [검색]을 눌러 주세요.\n\n*오른쪽 카드에서 출생 및 사망 옵션를 추가할 수 있습니다.', [
+  {
+    label: '성함',
+    action: 'block',
+    messageText: '성함',
+    blockId: BlockId.search_add_name_kor
+  },
+  {
+    label: '검색하기',
+    action: 'block',
+    messageText: '검색',
+    blockId: BlockId.search_result_main
+  }
+]);
+const birthCard = BasicCard('출생 정보 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
+  {
+    label: '출생 연도',
+    action: 'block',
+    messageText: '출생 연도',
+    blockId: BlockId.search_add_birth_year
+  },
+  {
+    label: '출생 월',
+    action: 'block',
+    messageText: '출생 월',
+    blockId: BlockId.search_add_birth_month
+  },
+  {
+    label: '출생 일',
+    action: 'block',
+    messageText: '출생 일',
+    blockId: BlockId.search_add_birth_day
+  },
+]);
+
+const deathCard = BasicCard('사망 정보 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
+  {
+    label: '사망 연도',
+    action: 'block',
+    messageText: '사망 연도',
+    blockId: BlockId.search_add_death_year
+  },
+  {
+    label: '사망 월',
+    action: 'block',
+    messageText: '사망 월',
+    blockId: BlockId.search_add_death_month
+  },
+  {
+    label: '사망 일',
+    action: 'block',
+    messageText: '사망 일',
+    blockId: BlockId.search_add_death_day
+  },
+]);
 
 /**
  * @description 검색의 초기 화면
@@ -30,7 +102,7 @@ export async function main(): ServiceResult<'SEARCH/MAIN', Object> {
 /**
  * @description 검색 옵션 추가 블럭 - main 블럭에서 넘어옴
  */
-export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD', Object> {
+export async function addO(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD', Object> {
   // const output1 = SimpleText(parseReqContexts(reqContext));
   const output2 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
@@ -55,6 +127,16 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
   return {
     // result: ResBody({ outputs: parseReqContexts(reqContext) !== no_option_txt ? [output1, output2] : [output2] }),
     result: ResBody({ outputs: [output2] }),
+    success: true
+  };
+}
+
+/**
+ * @description 검색 옵션 추가 블럭 - main 블럭에서 넘어옴
+ */
+export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD', Object> {
+  return {
+    result: ResBody({ outputs: [CarouselCard([optionCard(reqContextsToContext(reqContext)).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])] }),
     success: true
   };
 }
@@ -181,7 +263,6 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
     }
   }
   // output
-  const output2 = SimpleText(parseContext(newContext));
   const output3 = BasicCard('옵션 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
     {
       label: '옵션 추가/변경하기',
@@ -197,10 +278,18 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
     }
   ]);
   return {
-    result: ResBody({
-      outputs: [output2, output3],
-      contexts: newContext ? [newContext] : undefined
-    }),
+    // result: ResBody({
+    //   outputs: [CarouselCard([BasicCard(parseContext(newContext), undefined, [
+    //     {
+    //       label: '검색하기',
+    //       action: 'block',
+    //       messageText: '검색',
+    //       blockId: BlockId.search_result_main
+    //     }
+    //   ]).basicCard, output3.basicCard])],
+    result: ResBody({ outputs: [CarouselCard([optionCard(newContext).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])], contexts: newContext ? [newContext] : undefined }),
+    // contexts: newContext ? [newContext] : undefined
+    // }),
     success: true
   };
 }
@@ -221,7 +310,7 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
   if (clientExtra?.page) {
     page = Number(clientExtra.page);
   }
-  console.log('[result_main] page test (clientExtra): ', page);
+  console.log('[result_main] page test (page): ', page);
   //? DB 접근
   const context = reqContextsToContext(reqContexts);
   let query = PatrtcModel.find();
@@ -271,10 +360,10 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     }
   };
   const newQuery: QuickReply = {
-    label: '새로 검색',
+    label: '새로운 검색',
     action: 'block',
-    messageText: '새로 검색',
-    blockId: BlockId.search_main,
+    messageText: '새로운 검색',
+    blockId: BlockId.search_add,
     extra: {
     }
   };
@@ -286,8 +375,21 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
     quickReplies.push(nextQuick);
   }
   quickReplies.push(newQuery);
+  if (result.length < 1) {
+    return {
+      result: ResBody({
+        outputs: resultsToOutputs(page, result),
+        contexts: [{ name: 'search_options', lifeSpan: 0, params: {} }],
+        quickReplies
+      }),
+      success: true
+    };
+  }
   return {
-    result: ResBody({ outputs: resultsToOutputs(page, result), quickReplies }),
+    result: ResBody({
+      outputs: resultsToOutputs(page, result),
+      quickReplies
+    }),
     success: true
   };
 }

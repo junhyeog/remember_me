@@ -2,8 +2,6 @@ import { BasicCard } from './types';
 export default function PatrtcCard(title: String, _id: String) {
   const basicCard: BasicCard = {};
   basicCard['description'] = title;
-  console.log(title);
-  console.log();
   basicCard['buttons'] = [
     {
       label: '자세히 보기',
