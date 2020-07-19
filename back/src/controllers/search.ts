@@ -102,6 +102,7 @@ export async function result_detailById(req: Request, res: Response, next: NextF
   try {
     const ret = await SearchService.result_ById(req.params._id);
     if (ret.success && ret.result) {
+      // console.log(ret.result);
       return res.status(200).render('detail', ret.result);
     }
     return res.status(404).render('404');

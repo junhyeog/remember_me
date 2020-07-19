@@ -2,7 +2,7 @@ import { Patrtc } from 'utils/types';
 import { SimpleText, CarouselCard } from 'templates';
 import { Context, ReqContext } from 'templates/types';
 import { Document } from 'mongoose';
-import PatrtcCard, {PatrtcCard2} from 'templates/patrtcCard';
+import PatrtcCard, { PatrtcCard2 } from 'templates/patrtcCard';
 
 const pens: String[] = ['🖊️', '🖋️', '✒️', '✍️', '✏️'];
 const dateEmj1: String[] = ['☀️', '🌙'];
@@ -11,7 +11,7 @@ const dateEmj3: String[] = ['💮', '🏵️'];
 const sads: String[] = ['😥', '😓', '😭', '😢', '✏️'];
 const units: String[] = ['⛺', '🏕️', '🎪'];
 export const base_txt = '📌 검색 옵션 📌';
-export const no_option_txt = '현재 설정된 옵션이 없습니다.😓';
+export const no_option_txt = '현재 설정된 옵션이 없습니다.😓\n\n 오른쪽의 카드들을 통해 검색 옵션을 추가해보세요!😲';
 
 function randomElement(list: any[]) {
   return list[Math.floor(Math.random() * list.length)];
@@ -157,7 +157,7 @@ export function resultsToOutputs(page: Number, results: (Patrtc & Document)[]) {
 export function resultsToOutputs2(page: Number, results: (Patrtc & Document)[]) {
   //? 결과가 없을 경우
   if (results.length < 1) {
-    if (page === 0) return [SimpleText('검색 결과가 존재하지 않습니다.' + randomElement(sads))];
+    if (page === 0) return [SimpleText('즐겨찾기가 텅 비었습니다.😨')];
     else return [SimpleText('마지막 페이지입니다.' + randomElement(sads))];
   }
   //? 결과가 있을 경우
@@ -167,12 +167,19 @@ export function resultsToOutputs2(page: Number, results: (Patrtc & Document)[]) 
 }
 
 export function parseRow(row?: Patrtc) {
-  let txt = base_txt;
+  let txts = [];
   const emjs: String[] = randomElement([dateEmj1, dateEmj2, dateEmj3]);
   if (row) {
     //* name
+    let name_txt = '';
     if (row.name_kor) {
-      txt += '\n\n' + randomElement(pens) + ' 성함: ' + row.name_kor;
+      name_txt += randomElement(pens) + ' 성함: ' + row.name_kor;
+      if (row.name_chi) {
+        name_txt += ' (' + row.name_chi + ')';
+      }
+    }
+    if (name_txt.length > 1) {
+      txts.push(name_txt);
     }
     //* birth
     let birth_txt = '';
@@ -186,7 +193,7 @@ export function parseRow(row?: Patrtc) {
       birth_txt += row.birth_day + '일 ';
     }
     if (birth_txt.length > 0) {
-      txt += '\n\n' + emjs[0] + ' 출생 일자: ' + birth_txt;
+      txts.push(emjs[0] + ' 출생 일자: ' + birth_txt);
     }
     //* death
     let death_txt = '';
@@ -200,11 +207,39 @@ export function parseRow(row?: Patrtc) {
       death_txt += row.death_day + '일 ';
     }
     if (death_txt.length > 0) {
-      txt += '\n\n' + emjs[1] + ' 사망 일자: ' + death_txt;
+      txts.push(emjs[1] + ' 사망 일자: ' + death_txt);
+    }
+    //* place
+    if (row.place) {
+      txts.push('🗺' + ' 출생지: ' + row.place);
+    }
+    //* 군 정보
+    let kind_txt = '';
+    if (row.kind) {
+      kind_txt += row.kind + ' ';
+    }
+    if (row.unit) {
+      kind_txt += row.unit + ' ';
+    }
+    if (kind_txt.length > 0) {
+      txts.push('⛺' + ' 소속: ' + kind_txt);
+
+    }
+    if (row.rank) {
+      txts.push('🎖' + ' 계급: ' + row.rank);
     }
   }
-  if (txt === base_txt) {
-    txt = no_option_txt;
-  }
-  return txt;
+  let res = '';
+  txts.forEach((s) => {
+    if (s.length > 1) res += '<br><div>' + s.replace('\r\n', '') + '</div>';
+  });
+  return res;
+}
+
+export function parseDetail(detail: String) {
+  let res = '';
+  detail.split('.').forEach((s) => {
+    if (s.length > 1) res += '<br><div>• ' + s.replace('\r\n', '') + '.</div>';
+  });
+  return res;
 }

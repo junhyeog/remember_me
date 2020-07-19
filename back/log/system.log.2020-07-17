@@ -486,3 +486,151 @@ SyntaxError: Unexpected token 일 in JSON at position 0
     at /root/toy/remember_me/back/node_modules/express/lib/router/index.js:284:7
     at Function.process_params (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:335:12)
     at next (/root/toy/remember_me/back/node_modules/express/lib/router/index.js:275:10) 
+2020-07-17 22:46:00.492 [[32minfo[39m] 	Running in development mode 
+2020-07-17 22:46:06.348 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 22:57:40.219 [[32minfo[39m] 	Running in development mode 
+2020-07-17 22:57:52.403 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 23:09:19.530 [[32minfo[39m] 	Running in development mode 
+2020-07-17 23:09:23.508 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 23:17:06.606 [[33mwarn[39m] 	ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+    at eval (/root/toy/remember_me/back/src/views/detail.ejs:17:26)
+    at detail (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:691:17)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:36)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:105:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 23:17:09.065 [[33mwarn[39m] 	ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+    at eval (/root/toy/remember_me/back/src/views/detail.ejs:17:26)
+    at detail (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:691:17)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:36)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:105:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 23:47:11.833 [[33mwarn[39m] 	ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:9
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+    8|   <div style="font-size:24px; padding: 7%">
+ >> 9|     <%= paresd %>
+    10|   </div>
+    11|   <div style="font-size:24px; padding: 7%; background-color:#e8e8e8;">
+    12|     <span style="font-size:32px; padding: 7%; background-color:#e8e8e8;">
+
+paresd is not defined
+    at eval (/root/toy/remember_me/back/src/views/detail.ejs:17:26)
+    at detail (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:691:17)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:36)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:105:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 23:52:47.579 [[32minfo[39m] 	Running in development mode 
+2020-07-17 23:52:50.306 [[32minfo[39m] 	Connected to mongodb 
+2020-07-17 23:53:17.014 [[33mwarn[39m] 	ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:4
+    2| 
+    3| <head>
+ >> 4|   <title><%= name_kor %> <%= rank %></title>
+    5| </head>
+    6| 
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+
+rank is not defined
+ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:4
+    2| 
+    3| <head>
+ >> 4|   <title><%= name_kor %> <%= rank %></title>
+    5| </head>
+    6| 
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+
+rank is not defined
+    at eval (/root/toy/remember_me/back/src/views/detail.ejs:14:26)
+    at detail (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:691:17)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:36)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-17 23:57:38.260 [[33mwarn[39m] 	ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:4
+    2| 
+    3| <head>
+ >> 4|   <title><%= name_kor %> <%= rank %></title>
+    5| </head>
+    6| 
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+
+rank is not defined
+ReferenceError: /root/toy/remember_me/back/src/views/detail.ejs:4
+    2| 
+    3| <head>
+ >> 4|   <title><%= name_kor %> <%= rank %></title>
+    5| </head>
+    6| 
+    7| <body style="background-color:#F2F2F2;font-size:24px;">
+
+rank is not defined
+    at eval (/root/toy/remember_me/back/src/views/detail.ejs:14:26)
+    at detail (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:691:17)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:36)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 

@@ -1,0 +1,475 @@
+2020-07-19 12:22:55.719 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:23:18.847 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:25:14.637 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:25:17.093 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:26:25.791 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:26:28.076 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:28:38.886 [[32minfo[39m] 	Running in development mode 
+2020-07-19 12:28:39.169 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 12:29:50.413 [[32minfo[39m] 	Running in development mode 
+2020-07-19 12:29:50.473 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 12:29:57.030 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:30:53.245 [[32minfo[39m] 	Running in development mode 
+2020-07-19 12:30:53.679 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 12:31:27.002 [[32minfo[39m] 	Running in development mode 
+2020-07-19 12:31:27.068 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 12:31:32.413 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:35:44.101 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 12:40:34.717 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:40:39.048 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 12:54:03.663 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 14:45:29.253 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 14:45:40.810 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 14:45:40.844 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 14:45:51.836 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 14:50:38.357 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 18:21:30.858 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:21:34.048 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:22:09.982 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 18:22:24.003 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 18:23:52.977 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:23:53.062 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:23:58.293 [[33mwarn[39m] 	SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token < in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 18:25:14.522 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:25:14.594 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:25:42.715 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:25:42.789 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:25:46.399 [[33mwarn[39m] 	SyntaxError: Unexpected token = in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+SyntaxError: Unexpected token = in /root/toy/remember_me/back/src/views/detail.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+Or, if you meant to create an async function, pass `async: true` as an option.
+    at new Function (<anonymous>)
+    at Template.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:661:12)
+    at Object.compile (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:396:16)
+    at handleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:233:18)
+    at tryHandleCache (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:272:16)
+    at View.exports.renderFile [as engine] (/root/toy/remember_me/back/node_modules/ejs/lib/ejs.js:489:10)
+    at View.render (/root/toy/remember_me/back/node_modules/express/lib/view.js:135:8)
+    at tryRender (/root/toy/remember_me/back/node_modules/express/lib/application.js:640:10)
+    at Function.render (/root/toy/remember_me/back/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/root/toy/remember_me/back/node_modules/express/lib/response.js:1012:7)
+    at result_detailById (/root/toy/remember_me/back/src/controllers/search.ts:106:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7) 
+2020-07-19 18:27:08.123 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:27:08.185 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:32:00.011 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:32:27.509 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 18:36:59.137 [[32minfo[39m] 	Running in development mode 
+2020-07-19 18:36:59.266 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:26:01.411 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:26:02.221 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:31:16.603 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:31:16.700 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:31:58.637 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:31:58.689 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:32:15.131 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:32:15.201 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:33:15.583 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:33:15.649 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:33:39.892 [[32minfo[39m] 	Running in development mode 
+2020-07-19 19:33:39.954 [[32minfo[39m] 	Connected to mongodb 

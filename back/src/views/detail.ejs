@@ -4,9 +4,37 @@
   <title><%= name_kor %> <%= rank %></title>
 </head>
 
-<body style="background-color:rgba(45, 170, 219, 0.3);">
-  <div style="font-size:24px; padding: 7%">
-    <%= detail %>
+
+<body style="position:relative; margin:7%; background-color: #F2F2F2;">
+  <div style="position:relative; top: 0px; font-size:32px; margin:5% 0%; background-color: translate;">
+    <%= name_kor %> <%= rank %>
+  </div>
+  <div style="position:relative; display: flex; top: 0px; width:100%; background-color: translate;">
+
+    <div style="position:relative; width:40%; height:40%; left: 0%; top: 0px; background-color: translate;">
+      <img style="position:relative; top: 0px; width: 100%;" src='http://101.101.209.71:8080/img/antemrdm.jpg' />
+    </div>
+
+    <div
+      style="position:relative; left: calc(0% + 5%); width:0px; height:auto; box-shadow: 0.7px 0.7px 0.7px 0.7px #c2c2c2;">
+    </div>
+
+    <div style="position:relative; left: calc(0% + 10%); width: 50%; font-size:24px; background-color: translate;">
+      <%- parsed %>
+    </div>
+
+  </div>
+
+  <div style="position:relative; top:2.5%; width:100%;height:0px; box-shadow: 0.5px 0.5px 0.5px 0.5px #c2c2c2;">
+  </div>
+
+  <div style="position:relative; top: 5%; width:100%; border-radius:10px; padding:7% 0%; background-color: #c2c2c2;">
+    <span style="font-size:32px; padding: 7%; ">
+      💡
+    </span>
+    <div style="margin:5%;">
+      <%- parseDetail %>
+    </div>
   </div>
 </body>
 

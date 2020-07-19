@@ -6,7 +6,7 @@ import { checkPatrtc, getUser } from 'utils/user';
 import UserModel from 'models/user';
 import Mongoose, { Schema, Types } from 'mongoose';
 import { ObjectId } from 'bson';
-import { parseRow, resultsToOutputs, resultsToOutputs2 } from 'utils/result';
+import { resultsToOutputs, resultsToOutputs2 } from 'utils/result';
 import { RESULT_SIZE } from 'utils/constant';
 
 const showQuick: QuickReply = {

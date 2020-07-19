@@ -7,8 +7,20 @@ import { birth } from './patrtc';
 import PatrtcModel from 'models/patrtc';
 import { Document, Schema } from 'mongoose';
 import PatrtcCard from 'templates/patrtcCard';
-import { reqContextsToContext, parseContext, resultsToOutputs, no_option_txt, base_txt } from 'utils/result';
+import { reqContextsToContext, parseContext, resultsToOutputs, no_option_txt, base_txt, parseRow, parseDetail } from 'utils/result';
 
+const searchQuick: QuickReply = {
+  label: '검색하기🔍',
+  action: 'block',
+  messageText: '검색',
+  blockId: BlockId.search_result_main
+};
+const homeQuick: QuickReply = {
+  label: '홈🏡',
+  action: 'block',
+  messageText: '홈',
+  blockId: BlockId.main_home,
+};
 function optionCard(context?: Context) {
   // return BasicCard(parseContext(context), undefined, [
   //   {
@@ -32,12 +44,12 @@ const nameCard = BasicCard('성함 정보 추가/변경하기', '성함 정보�
     messageText: '성함',
     blockId: BlockId.search_add_name_kor
   },
-  {
-    label: '검색하기',
-    action: 'block',
-    messageText: '검색',
-    blockId: BlockId.search_result_main
-  }
+  // {
+  //   label: '검색하기',
+  //   action: 'block',
+  //   messageText: '검색',
+  //   blockId: BlockId.search_result_main
+  // }
 ]);
 const birthCard = BasicCard('출생 정보 추가/변경하기', '어떤 옵션을 추가/변경하시겠습니까?', [
   {
@@ -136,7 +148,10 @@ export async function addO(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD'
  */
 export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD', Object> {
   return {
-    result: ResBody({ outputs: [CarouselCard([optionCard(reqContextsToContext(reqContext)).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])] }),
+    result: ResBody({
+      outputs: [CarouselCard([optionCard(reqContextsToContext(reqContext)).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])],
+      quickReplies: [searchQuick]
+    }),
     success: true
   };
 }
@@ -242,15 +257,7 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
   //? 날짜 옵션 업데이트
   if (option !== 'name_kor') {
     if (newContext) {
-      // console.log();
-      // console.log('!!! 이전', JSON.stringify(newContext), JSON.stringify(val));
-      // console.log();
-
       newContext.params[option] = (<SysNumber>val).amount;
-
-      // console.log('!!! 이후', JSON.stringify(newContext), JSON.stringify(val));
-      // console.log();
-
     }
     else {
       newContext = {
@@ -287,7 +294,11 @@ export async function add_option(option: OptionName, val: SysNumber | String, re
     //       blockId: BlockId.search_result_main
     //     }
     //   ]).basicCard, output3.basicCard])],
-    result: ResBody({ outputs: [CarouselCard([optionCard(newContext).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])], contexts: newContext ? [newContext] : undefined }),
+    result: ResBody({
+      outputs: [CarouselCard([optionCard(newContext).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])],
+      contexts: newContext ? [newContext] : undefined,
+      quickReplies: [searchQuick]
+    }),
     // contexts: newContext ? [newContext] : undefined
     // }),
     success: true
@@ -359,7 +370,7 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
       page: page - 1
     }
   };
-  const newQuery: QuickReply = {
+  const newQuick: QuickReply = {
     label: '새로운 검색',
     action: 'block',
     messageText: '새로운 검색',
@@ -374,7 +385,8 @@ export async function result_main(reqContexts: ReqContext[], clientExtra?: Clien
   if (result.length >= RESULT_SIZE) {
     quickReplies.push(nextQuick);
   }
-  quickReplies.push(newQuery);
+  quickReplies.push(newQuick);
+  quickReplies.push(homeQuick);
   if (result.length < 1) {
     return {
       result: ResBody({
@@ -410,8 +422,16 @@ export async function result_ById(_id: String): ServiceResult<'SEARCH/DETAILBYID
         success: false
       };
     }
+    const res = result[0];
     return {
-      result: result[0],
+      result: {
+        name_kor: res.name_kor,
+        name_chi: res.name_chi,
+        parsed: parseRow(res),
+        parseDetail: parseDetail(res.detail),
+        rank: res.rank,
+        detail: res.detail
+      },
       success: true
     };
   }
@@ -420,7 +440,5 @@ export async function result_ById(_id: String): ServiceResult<'SEARCH/DETAILBYID
       reason: 'SEARCH/DETAILBYID',
       success: false
     };
-
-
   }
 }
