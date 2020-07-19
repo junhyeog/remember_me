@@ -473,3 +473,4 @@ Or, if you meant to create an async function, pass `async: true` as an option.
 2020-07-19 19:33:15.649 [[32minfo[39m] 	Connected to mongodb 
 2020-07-19 19:33:39.892 [[32minfo[39m] 	Running in development mode 
 2020-07-19 19:33:39.954 [[32minfo[39m] 	Connected to mongodb 
+2020-07-19 19:34:46.177 [[32minfo[39m] 	Connected to mongodb 

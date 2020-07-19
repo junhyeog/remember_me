@@ -37,7 +37,7 @@ function optionCard(context?: Context) {
   return BasicCard(base_txt, option_txt.slice(base_txt.length));
 }
 
-const nameCard = BasicCard('성함 정보 추가/변경하기', '성함 정보를 추가/변경하시려면 [성함]을, 현재의 검색 옵션으로 검색하시려면 [검색]을 눌러 주세요.\n\n*오른쪽 카드에서 출생 및 사망 옵션를 추가할 수 있습니다.', [
+const nameCard = BasicCard('성함 정보 추가/변경하기', '성함 정보를 추가/변경하시려면 [성함]을, 현재의 검색 옵션으로 검색하시려면 [검색]을 눌러 주세요.\n\n*오른쪽 카드에서 출생 및 사망 정보 옵션을 추가할 수 있습니다.', [
   {
     label: '성함',
     action: 'block',
@@ -150,7 +150,7 @@ export async function add(reqContext: ReqContext[]): ServiceResult<'SEARCH/ADD',
   return {
     result: ResBody({
       outputs: [CarouselCard([optionCard(reqContextsToContext(reqContext)).basicCard, nameCard.basicCard, birthCard.basicCard, deathCard.basicCard])],
-      quickReplies: [searchQuick]
+      quickReplies: [searchQuick, homeQuick]
     }),
     success: true
   };

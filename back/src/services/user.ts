@@ -8,6 +8,7 @@ import Mongoose, { Schema, Types } from 'mongoose';
 import { ObjectId } from 'bson';
 import { resultsToOutputs, resultsToOutputs2 } from 'utils/result';
 import { RESULT_SIZE } from 'utils/constant';
+import { home } from './main';
 
 const showQuick: QuickReply = {
   label: '즐겨찾기⭐',
@@ -104,7 +105,7 @@ export async function favorite_add(botUserKey: String, _id1: String): ServiceRes
     if (fav.favorite.includes(_id)) return {
       result: ResBody({
         outputs: [SimpleText('이미 즐겨찾기에 추가되어있습니다!😵')],
-        quickReplies: [showQuick]
+        quickReplies: [showQuick, homeQuick]
       }),
       success: true
     };
@@ -121,7 +122,7 @@ export async function favorite_add(botUserKey: String, _id1: String): ServiceRes
   return {
     result: ResBody({
       outputs: [SimpleText('즐겨찾기에 추가되었습니다!😚')],
-      quickReplies: [showQuick]
+      quickReplies: [showQuick, homeQuick]
     }),
     success: true
   };
@@ -163,7 +164,7 @@ export async function favorite_del(botUserKey: String, _id1: String): ServiceRes
   return {
     result: ResBody({
       outputs: [SimpleText('즐겨찾기에서 삭제되었습니다!😟')],
-      quickReplies: [showQuick]
+      quickReplies: [showQuick, homeQuick]
     }),
     success: true
   };
