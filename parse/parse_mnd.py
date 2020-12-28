@@ -209,6 +209,7 @@ def xlsToDB(f):
     db = client.rmbrme
     patrtc = db.patrtc
     # db에 값 추가
+    print("example:", patrtc_list[0])
     for p in patrtc_list:
         if patrtc.find(p).count() == 0 and checkP(p):
             patrtc.insert_one(p)
@@ -218,13 +219,13 @@ def xlsToDB(f):
 # main
 
 
-f = pd.ExcelFile('/root/toy/remember_me/data/korwar/mnd/1-10000.xls')
+f = pd.ExcelFile('../data/korwar/mnd/1-10000.xls')
 xlsToDB(f)
-f = pd.ExcelFile('/root/toy/remember_me/data/korwar/mnd/10001-20000.xls')
+f = pd.ExcelFile('../data/korwar/mnd/10001-20000.xls')
 xlsToDB(f)
-f = pd.ExcelFile('/root/toy/remember_me/data/korwar/mnd/20001-30000(수정).xls')
+f = pd.ExcelFile('../data/korwar/mnd/20001-30000(수정).xls')
 xlsToDB(f)
-f = pd.ExcelFile('/root/toy/remember_me/data/korwar/mnd/30001-40000.xls')
+f = pd.ExcelFile('../data/korwar/mnd/30001-40000.xls')
 xlsToDB(f)
-f = pd.ExcelFile('/root/toy/remember_me/data/korwar/mnd/40001-끝.xls')
+f = pd.ExcelFile('../data/korwar/mnd/40001-끝.xls')
 xlsToDB(f)

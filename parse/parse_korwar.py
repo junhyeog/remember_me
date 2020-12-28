@@ -1,7 +1,7 @@
 import pandas as pd
 import pymongo as mongo
 
-f = pd.read_csv('/root/toy/remember_me/data/korwar/DS_WARHSTR_KORWAR_PATRTC.csv',
+f = pd.read_csv('../data/korwar/DS_WARHSTR_KORWAR_PATRTC.csv',
                 encoding='cp949')
 # 1	전쟁/군사정보>6.25전쟁>호국선열(인물) 정보	PS01004076	백성흠 소위	상세설명 전쟁기념관	白聖欽	1926.2.10-1950.6.30	경북 청송	공군 소위	충무무공훈장
 # -, -, -,
@@ -87,7 +87,7 @@ def checkP(d):
 for r in v:
     patrtc_list.append(parse_r(r))
 
-client = mongo.MongoClient('mongodb://localhost:27017')
+client = mongo.MongoClient('mongodb://localhost:27017/dev')
 print(client.address)
 print(client.HOST)
 print(client.database_names())
@@ -97,10 +97,12 @@ print(db.collection_names())
 
 for p in patrtc_list:
     if patrtc.find(p).count() == 0 and checkP(p):
-        print(p['name_kor'])
-        # patrtc.insert_one(p)
+        # print(p['name_kor'])
+        patrtc.insert_one(p)
+        a=1
     else:
-        print('!!!!!!!!!!!!', p)
+        # print('!!!!!!!!!!!!', p)
+        a=2
 
 
-# print(patrtc.find({'source':'전쟁기념관'}).count())
+print(patrtc.find({'source':'전쟁기념관'}).count())
