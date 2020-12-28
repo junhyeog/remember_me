@@ -16,7 +16,7 @@ router.use('/user', UserRouter);
 
 router.get('/', (_, res) => {
   res.status(200);
-  res.send('Hello world!!');
+  res.send('Hello world!!\n\nWelcome rmbrme mobile server');
 });
 
 export default router;
