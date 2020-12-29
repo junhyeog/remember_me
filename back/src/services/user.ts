@@ -19,7 +19,7 @@ const showQuick: QuickReply = {
 const homeQuick: QuickReply = {
   label: '홈🏡',
   action: 'block',
-  messageText: '홈',
+  // messageText: '홈',
   blockId: BlockId.main_home,
 };
 

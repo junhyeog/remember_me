@@ -1,5 +1,6 @@
 import { BasicCard } from './types';
 import BlockId from 'utils/blockId';
+import { HOST } from '../utils/constant';
 export default function PatrtcCard(title: String, _id: String) {
   const basicCard: BasicCard = {};
   basicCard['description'] = title;
@@ -7,7 +8,7 @@ export default function PatrtcCard(title: String, _id: String) {
     {
       label: '자세히 보기',
       action: 'webLink',
-      webLinkUrl: 'http://101.101.209.71:8080/search/result/detail/' + _id
+      webLinkUrl: HOST+'/search/result/detail/' + _id
     },
     {
       label: '즐겨찾기에 추가',
@@ -26,7 +27,7 @@ export function PatrtcCard2(title: String, _id: String) {
     {
       label: '자세히 보기',
       action: 'webLink',
-      webLinkUrl: 'http://101.101.209.71:8080/search/result/detail/' + _id
+      webLinkUrl: HOST+'/search/result/detail/' + _id
     },
     {
       label: '즐겨찾기에서 삭제',

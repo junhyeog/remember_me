@@ -11,19 +11,19 @@ const quickReplies: QuickReply[] = [
   {
     label: '오늘의 호국영령📅',
     action: 'block',
-    messageText: '오늘의 호국영령',
+    // messageText: '오늘의 호국영령',
     blockId: BlockId.main_today,
   },
   {
     label: '검색🔍',
     action: 'block',
-    messageText: '검색',
+    // messageText: '검색',
     blockId: BlockId.search_add,
   },
   {
     label: '즐겨찾기⭐',
     action: 'block',
-    messageText: '즐겨찾기',
+    // messageText: '즐겨찾기',
     blockId: BlockId.user_favorite_get,
   },
   // { //TODO
@@ -35,7 +35,7 @@ const quickReplies: QuickReply[] = [
   {
     label: '이용 안내📋',
     action: 'block',
-    messageText: '이용 안내',
+    // messageText: '이용 안내',
     blockId: BlockId.main_info,
   },
 ];
@@ -45,7 +45,7 @@ const quickReplies: QuickReply[] = [
  */
 export async function home(): ServiceResult<'MAIN/HOME', Object> {
   const output1 = SimpleText('모바일 공훈록 기억해줘📬입니다. 무엇을 도와드릴까요?🧐');
-  const output2 = SimpleText('※ 모든 국가유공자분들의 정보가 제공되지 못하는 점 양해 부탁드립니다.\n※ 현재는 2020년 6.25전쟁 70주년을 맞아 6.25전쟁 참전 용사분들의 정보가 주를 이루고 있습니다.');
+  const output2 = SimpleText('※ 모든 국가유공자분들의 정보가 제공되지 못하는 점 양해 부탁드립니다.\n');
   return {
     result: ResBody({ outputs: [output1, output2], quickReplies }),
     success: true

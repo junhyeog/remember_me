@@ -13,6 +13,9 @@ async function setup(isDev: boolean) {
   if (isDev) {
     winston.info('Running in development mode');
   }
+  else {
+    winston.info('Running in prod mode');
+  }
   if (process.env.MONGO_HOST === undefined) {
     winston.error('MONGO_HOST not found');
     process.exit(1);
