@@ -48,3 +48,18 @@ export async function favorite_del(req: Request, res: Response, next: NextFuncti
     next(err);
   }
 }
+
+/**
+ * @description Controller for `POST /user/log/add
+ */
+export async function log_add(req: Request, res: Response, next: NextFunction) {
+  try {
+    const ret = await UserService.log_add(req.body.userRequest.user.id, req.body);
+    if (ret.success && ret.result) {
+      return res.status(200).json(ret.result);
+    }
+    return res.status(200).json(ResBody({ outputs: [SimpleText(ret.reason || 'error')] }));
+  } catch (err) {
+    next(err);
+  }
+}

@@ -27,3 +27,11 @@
 2020-12-29 09:36:54.966 [[32minfo[39m] 	Connected to mongodb 
 2020-12-29 09:36:55.056 [[32minfo[39m] 	starting https server on port 7627.... 
 2020-12-29 09:36:55.124 [[32minfo[39m] 	now https server on port 7627 is listening 
+2020-12-29 09:57:50.706 [[32minfo[39m] 	Running in prod mode 
+2020-12-29 09:57:51.053 [[32minfo[39m] 	Connected to mongodb 
+2020-12-29 09:57:51.155 [[32minfo[39m] 	starting https server on port 7627.... 
+2020-12-29 09:57:51.268 [[32minfo[39m] 	now https server on port 7627 is listening 
+2020-12-29 10:21:10.072 [[32minfo[39m] 	Running in prod mode 
+2020-12-29 10:21:10.430 [[32minfo[39m] 	Connected to mongodb 
+2020-12-29 10:21:10.499 [[32minfo[39m] 	starting https server on port 7627.... 
+2020-12-29 10:21:10.577 [[32minfo[39m] 	now https server on port 7627 is listening 

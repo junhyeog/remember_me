@@ -6,7 +6,8 @@ import { ObjectId } from 'bson';
 const schema = new mongo.Schema<User>(
   {
     botUserKey: { required: true, type: String, unique: true },
-    favorite: [{ type: ObjectId, required: true, ref: 'Patrtc' }]
+    favorite: [{ type: ObjectId, required: true, ref: 'Patrtc' }],
+    log: [{ type: String }],
   },
   {
     collection: 'user', // 컬렉션명 지정

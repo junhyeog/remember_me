@@ -9,6 +9,7 @@ import { ObjectId } from 'bson';
 import { resultsToOutputs, resultsToOutputs2 } from 'utils/result';
 import { RESULT_SIZE } from 'utils/constant';
 import { home } from './main';
+import winston from 'winston';
 
 const showQuick: QuickReply = {
   label: '즐겨찾기⭐',
@@ -164,6 +165,61 @@ export async function favorite_del(botUserKey: String, _id1: String): ServiceRes
   return {
     result: ResBody({
       outputs: [SimpleText('즐겨찾기에서 삭제되었습니다!😟')],
+      quickReplies: [showQuick, homeQuick]
+    }),
+    success: true
+  };
+}
+
+
+/**
+ * @description 로그 추가
+ * @param botUserKey user의 id(botUserKey)
+ * @param body skillpayload 전체
+ */
+export async function log_add(botUserKey: String, body: String): ServiceResult<'LOG/ADD', Object> {
+  const _id = <ObjectId><unknown>botUserKey;
+  winston.log('[log_add] param botUserKey:', _id);
+  winston.log('[log_add] param body:', 'skip');
+  const res = await checkPatrtc(_id);
+  if (!res) {
+    winston.error('[log_add] fail to check patrtc');
+    return { success: true, result: ErrRes };
+  }
+  getUser(botUserKey)
+    .then((user) => {
+      if (!user) {
+        winston.error('[log_add] fail to get user');
+        return { success: true, result: ErrRes };
+      }
+      else {
+        console.log('2222222');
+        console.log('[favorite_add] pushed before:', user.favorite);
+      }
+    });
+  //check
+  const fav = await UserModel.findOne({ botUserKey });
+  if (fav) {
+    if (fav.favorite.includes(_id)) return {
+      result: ResBody({
+        outputs: [SimpleText('이미 즐겨찾기에 추가되어있습니다!😵')],
+        quickReplies: [showQuick, homeQuick]
+      }),
+      success: true
+    };
+  }
+  UserModel.findOneAndUpdate({ botUserKey },
+    { '$addToSet': { favorite: _id } },
+    { 'new': true, 'upsert': true },
+    (err: any, doc: { favorite: any; }) => {
+      console.log('[favorite_add] pushed after:', doc.favorite);
+      if (err) return { success: true, result: ErrRes };
+    }
+  );
+  console.log('=======================');
+  return {
+    result: ResBody({
+      outputs: [SimpleText('즐겨찾기에 추가되었습니다!😚')],
       quickReplies: [showQuick, homeQuick]
     }),
     success: true
