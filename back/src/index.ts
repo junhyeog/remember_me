@@ -11,19 +11,15 @@ import PatrtcModel from 'models/patrtc';
 
 async function setup(isDev: boolean) {
   if (isDev) {
-    winston.info('Running in development mode');
+    winston.info('[+] Running in development mode');
   }
   else {
-    winston.info('Running in prod mode');
+    winston.info('[+] Running in prod mode');
   }
   if (process.env.MONGO_HOST === undefined) {
-    winston.error('MONGO_HOST not found');
+    winston.error('[-] MONGO_HOST not found');
     process.exit(1);
   }
-  // if (process.env.SESSION_SECRET === undefined) {
-  //   winston.error('SESSION_SECRET not found');
-  //   process.exit(1);
-  // }
   const mongooseConfig: mongoose.ConnectionOptions = {
     useCreateIndex: true,
     useFindAndModify: false,
@@ -32,15 +28,14 @@ async function setup(isDev: boolean) {
   };
   await mongoose.connect(process.env.MONGO_HOST, mongooseConfig, (err) => {
     if (err) {
-      winston.error('connection err', err);
+      winston.error('[-] DB Connection err', err);
       process.exit(1);
     }
   });
-  winston.info('Connected to mongodb');
+  winston.info('[+] Connected to mongodb');
 }
 
 export default async function createApp(isDev = false) {
-
   // Set configs
   await setup(isDev);
   const app = express();

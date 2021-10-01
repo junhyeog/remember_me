@@ -96,7 +96,7 @@ export async function result_main(req: Request, res: Response, next: NextFunctio
 }
 
 /**
- * @description Controller for `POST /search/detail/:_id
+ * @description Controller for `GET /search/result/detail/:_id
  */
 export async function result_detailById(req: Request, res: Response, next: NextFunction) {
   try {

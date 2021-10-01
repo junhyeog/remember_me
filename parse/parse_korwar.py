@@ -63,13 +63,15 @@ def parse_r(r):
                 [d['die_year'], d['die_month'], d['die_day']] = [
                     int(i) for i in die.split('.')]
             except:
-                print(data)
+                a=1
+                # print(data)
         elif idx == 8:
             try:
                 d['place'] = data.rstrip().lstrip()
 
             except:
-                print(data)
+                a=1
+                # print(data)
         elif idx == 9:
             data = data.split(' ')
             if d['rank'] != data[0].rstrip().lstrip():

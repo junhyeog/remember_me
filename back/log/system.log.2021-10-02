@@ -1,0 +1,51 @@
+2021-10-02 02:11:41.945 [[32minfo[39m] 	Running in development mode 
+2021-10-02 02:11:41.958 [[32minfo[39m] 	Connected to mongodb 
+2021-10-02 02:11:41.961 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 02:11:41.964 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 02:12:11.974 [[31merror[39m] 	connection err connect ECONNREFUSED 127.0.0.1:27017 {
+  "reason": {
+    "type": "Single",
+    "setName": null,
+    "maxSetVersion": null,
+    "maxElectionId": null,
+    "servers": {},
+    "stale": false,
+    "compatible": true,
+    "compatibilityError": null,
+    "logicalSessionTimeoutMinutes": null,
+    "heartbeatFrequencyMS": 10000,
+    "localThresholdMS": 15,
+    "commonWireVersion": null
+  },
+  "stack": "MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at NativeConnection.Connection.openUri (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\mongoose\\lib\\connection.js:846:32)\n    at C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\mongoose\\lib\\index.js:351:10\n    at promiseOrCallback (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:10:12)\n    at Mongoose._promiseOrCallback (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at setup (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\src\\index.ts:29:18)\n    at Object.createApp [as default] (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\src\\index.ts:40:9)\n    at buildServer (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\www.ts:32:16)\n    at Object.<anonymous> (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\www.ts:47:1)\n    at Module._compile (internal/modules/cjs/loader.js:1072:14)\n    at Module._compile (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\antem\\AppData\\Local\\Temp\\ts-node-dev-hook-7441036929672602.js:69:33)\n    at Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at require.extensions.<computed> (C:\\Users\\antem\\AppData\\Local\\Temp\\ts-node-dev-hook-7441036929672602.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\antem\\Downloads\\toy-proj\\remember_me\\back\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (internal/modules/cjs/loader.js:937:32)"
+}
+2021-10-02 03:00:40.839 [[32minfo[39m] 	[+] Running in development mode 
+2021-10-02 03:00:40.851 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 03:00:40.855 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 03:00:40.857 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 03:06:37.299 [[32minfo[39m] 	[+] Running in development mode 
+2021-10-02 03:06:37.313 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 03:06:37.317 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 03:06:37.319 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 03:06:46.709 [[33mwarn[39m] 	TypeError: Cannot read property '0' of undefined
+TypeError: Cannot read property '0' of undefined
+    at Object.result_main (C:\Users\antem\Downloads\toy-proj\remember_me\back\src\services\search.ts:316:95)
+    at result_main (C:\Users\antem\Downloads\toy-proj\remember_me\back\src\controllers\search.ts:88:37)
+    at Layer.handle [as handle_request] (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\antem\Downloads\toy-proj\remember_me\back\node_modules\express\lib\router\index.js:275:10) 
+2021-10-02 03:08:44.299 [[32minfo[39m] 	[+] Running in development mode 
+2021-10-02 03:08:44.312 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 03:08:44.316 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 03:08:44.319 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
