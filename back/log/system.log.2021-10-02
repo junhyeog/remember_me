@@ -82,3 +82,15 @@ TypeError: Cannot read property '0' of undefined
 2021-10-02 03:52:08.791 [[32minfo[39m] 	[+] Connected to mongodb 
 2021-10-02 03:52:08.795 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
 2021-10-02 03:52:08.798 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 08:59:53.508 [[32minfo[39m] 	[+] Running in prod mode 
+2021-10-02 08:59:53.516 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 08:59:53.521 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 08:59:53.525 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 09:02:06.480 [[32minfo[39m] 	[+] Running in prod mode 
+2021-10-02 09:02:06.487 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 09:02:06.491 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 09:02:06.495 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 
+2021-10-02 09:04:35.018 [[32minfo[39m] 	[+] Running in prod mode 
+2021-10-02 09:04:35.026 [[32minfo[39m] 	[+] Connected to mongodb 
+2021-10-02 09:04:35.030 [[32minfo[39m] 	[+] Starting http server on port 7627.... 
+2021-10-02 09:04:35.036 [[32minfo[39m] 	[+] Now http server on port 7627 is listening 

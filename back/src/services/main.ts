@@ -45,7 +45,7 @@ const quickReplies: QuickReply[] = [
  */
 export async function home(): ServiceResult<'MAIN/HOME', Object> {
   const output1 = SimpleText('모바일 공훈록 기억해줘📬입니다. 무엇을 도와드릴까요?🧐');
-  const output2 = SimpleText('※ 모든 국가유공자분들의 정보가 제공되지 못하는 점 양해 부탁드립니다.\n');
+  const output2 = SimpleText('※ 모든 국가유공자분들의 정보가 제공되지 못하는 점 양해 부탁드립니다.');
   return {
     result: ResBody({ outputs: [output1, output2], quickReplies }),
     success: true
